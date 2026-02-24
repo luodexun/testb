@@ -1,0 +1,27 @@
+.common-search {
+  display: flex;
+  flex-wrap: wrap;
+}
+.alarm-card {
+  display: flex;
+  align-items: center;
+  .alarm-card-left {
+    height: 1.8rem;
+    line-height: 1.8rem;
+    border-left: 1px solid #0c55f1;
+    background: linear-gradient(to right, rgba(155, 203, 238, 0.4), #0e0e36);;
+  }
+  .alarm-card-right {
+    margin-left: 1.25rem;
+    color: rgba(30, 208, 217, 0.4);
+    display: flex;
+    .alarm-card-right--box {
+      cursor: pointer;
+      min-width: 80px;
+    }
+    .activeI {
+      color: rgba(9, 242, 223, 0.7);
+      font-weight: 600;
+    }
+  }
+}

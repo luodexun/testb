@@ -1,0 +1,37 @@
+@import "@/styles/layout-flex";
+
+.confirm-info-wrap {
+  .flex-column(0, flex-start, space-evenly);
+  overflow: hidden;
+  .metric-tag {
+    width: 100%;
+  }
+  .value-unit {
+    flex: 1;
+    overflow: hidden;
+    word-wrap: break-word;
+    .info-value {
+      display: block;
+      text-align: left;
+      font-weight: normal;
+      width: 100%;
+      word-wrap: break-word;
+      white-space: break-spaces;
+    }
+  }
+  .ciw-item {
+    width: 100%;
+    min-height: 1.5em;
+    display: flex;
+    justify-content: flex-start;
+    overflow: auto;
+    .ciw-item-name {
+      width: 6em;
+    }
+    .ciw-item-value {
+      flex: 1;
+      max-height: max-content;
+      overflow: auto;
+    }
+  }
+}

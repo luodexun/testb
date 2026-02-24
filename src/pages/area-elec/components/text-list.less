@@ -1,0 +1,22 @@
+.text-list {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  .text-list-item {
+    padding: 0px 0.20em;
+    text-align: center;
+    position: relative;
+  }
+  .text-list-item:not(:first-child)::before {
+    position: absolute;
+	  top: 50%;
+	  transform: translatey(-40%);
+	  left: 0;
+    content: "";
+    width: 1px;
+    height: 1.3em;
+    background: var(--bg-active);
+  }
+}

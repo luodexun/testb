@@ -1,0 +1,56 @@
+.device-detail-one {
+  padding: 0 0.2em .2em .15em;
+  position: relative;
+  cursor: pointer;
+  .device-i {
+    display: flex;
+    align-items: center;
+  }
+  .device-icon {
+    height: 1.5em;
+    width: 1.5em;
+    color: #0A0D27;
+    border-radius: 50%;
+    font-size: 1.1em;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.shang {
+      animation: flashings 1s infinite;
+    }
+  }
+  @keyframes flashings {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0.3;
+        // background-color: #ffffff;
+    }
+  }
+  .device-icon-dv {
+    padding-left: 0.1em;
+    // position: relative;
+    // top: -0.3em;
+    // right: -0.05em;
+  }
+  .cxt-menu {
+    position: absolute;
+    top: 2em;
+    left: 0;
+    z-index: 2;
+  }
+  .state-ovw-overlay {
+    font-size: 14px;
+    padding: 0.6em;
+    position: absolute;
+    // bottom: 2em;
+    left: 0em;
+    background-color: var(--bg-active);
+    z-index: 999;
+  }
+}
+.sign-border {
+  border: 0.1em solid rgb(253, 237, 15);
+}

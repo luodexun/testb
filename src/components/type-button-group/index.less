@@ -1,0 +1,17 @@
+@import "@/styles/layout-flex";
+@import "@/styles/device-state";
+
+.type-button-group-wrap {
+  .d-flex(1em, flex-start, flex-start);
+  .control-btn-color(table-type-btn, @control-type-set[control-limit]);
+  .type-btn {
+    background: var(--bg-linear);
+    border-radius: 0.4em;
+    color: var(--graycolor);
+    border: none;
+    &.checked-btn {
+      color: var(--fontcolor);
+      background: var(--bg-linear-active);
+    }
+  }
+}

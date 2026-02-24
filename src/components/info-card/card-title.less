@@ -1,0 +1,37 @@
+@import "@/styles/style-funs";
+
+:where(.card-title) {
+  position: relative;
+  padding-left: 0.8em;
+  font-weight: 600;
+  width: 100%;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0.2em;
+    height: var(--c-title-h, 1em);
+    box-sizing: content-box;
+    border-left: 0.1em solid var(--c-title-border-color, var(--split-color));
+    border-right: 0.3em solid var(--c-title-border-color, var(--split-color));
+    transform: translateY(-50%);
+  }
+  .card-content {
+    width: 100%;
+  }
+  .jump-icon {
+    color: var(--graycolor);
+  }
+}
+
+:where(.img-bg-title) {
+  position: relative;
+  padding-left: 3em;
+  font-weight: 600;
+  font-size: 0.9em;
+  width: 12em;
+  .full-img-bg("@/assets/menu/title_bg.png");
+}

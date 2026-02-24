@@ -1,0 +1,59 @@
+.gdscreen {
+  // width: 1920px;
+  // height: 1080px;
+  height: 100%;
+  width: 100%;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  // flex-wrap: nowrap;
+  background-image: url(/src/assets/guangdong-screen/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  .gdscreen-content {
+    padding: 0 1em 1em;
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    .gdscreen-left {
+      width: 28%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .gdscreen-center {
+      flex: 1;
+      margin: 1em;
+      height: 100%;
+    }
+    .gdscreen-right {
+      width: 28%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .gdscreen-com-box {
+      height: 32.5%;
+    }
+  }
+  
+  .screen-box {
+    height: 100%;
+    width: 100%;
+    // margin-bottom: 2.4em;
+    background-image: url(/src/assets/guangdong-screen/box-com.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .screen-box-content {
+      flex: 1;
+      padding: 0 1em;
+    }
+  }
+}

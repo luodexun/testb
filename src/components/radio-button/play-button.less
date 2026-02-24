@@ -1,0 +1,14 @@
+@import "@/styles/layout-flex";
+
+.play-btn-wrap {
+  .d-flex(0.4em, center, flex-start);
+  & .ant-btn:not(&[disabled]) {
+    color: var(--border-color);
+    &[disabled] {
+      color: var(--deep-gray);
+    }
+    &:hover:not(&[disabled]) {
+      opacity: 1;
+    }
+  }
+}

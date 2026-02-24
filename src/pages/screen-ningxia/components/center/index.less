@@ -1,0 +1,47 @@
+.nx-center {
+  height: 100%;
+  padding-top: 5em;
+  position: relative;
+  .nx-center-stc {
+    position: absolute;
+    top: 10em;
+  }
+  .map-center {
+    height: 100%;
+  }
+  .nx-map-tbox {
+    width: 19em;
+    height: 12em;
+    padding: 0 1.2em;
+    background-image: url(/src/assets/ningxia-screen/map-tooltips.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    .map-tbox-title {
+      height: 2.2em;
+      line-height: 2.2em;
+      font-size: 1.8em;
+      color: var(--white-color);
+    }
+    .map-tbox-cnt {
+      padding: 1em 0;
+      .map-cnt-item {
+        display: flex;
+        line-height: 1.4;
+        .cnt-item-name {
+          width: 4em;
+          font-size: 1.6em;
+          color: rgba(0, 242, 255, 1);
+        }
+        .cnt-item-value {
+          font-size: 2em;
+          color: var(--white-color);
+          margin-right: 0.5em;
+        }
+        .cnt-item-unit {
+          font-size: 1.6em;
+          color: rgba(0, 242, 255, .6);
+        }
+      }
+    }
+  }
+}

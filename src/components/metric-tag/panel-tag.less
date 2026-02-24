@@ -1,0 +1,40 @@
+@import "@/styles/layout-flex";
+
+.panel-tag-wrap {
+  position: relative;
+  padding: 0.5em 0;
+  .flex-column(0, center, space-evenly);
+  background: linear-gradient(180deg, rgba(62, 112, 238, 0.61) 0%, rgba(28, 73, 128, 0.4) 100%);
+  color: var(--fontcolor);
+  width: 8.625rem;
+  height: 3.9375rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset: 2px;
+    background-color: rgb(9, 28, 64);
+    box-shadow:
+      1px 1px 0 0 var(--bgcolor),
+      -1px -1px 0 0 var(--bgcolor);
+  }
+  .tag-unit {
+    font-size: 0.9em;
+  }
+  .value-unit,
+  .title-unit {
+    .d-flex(0.5em, center, center);
+    transform: translateY(0);
+  }
+  .value-unit {
+    .tag-value {
+      font-size: 1.2em;
+      font-weight: 600;
+      color: var(--white-color);
+    }
+    .tag-unit {
+      transform: translateY(20%);
+    }
+  }
+}

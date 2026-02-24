@@ -1,0 +1,49 @@
+.ar-edit {
+  width: 100%;
+  height: 750px;
+  
+  display: flex;
+  overflow: auto;
+  border: 1px solid var(--border-color);
+  .ar-edit-left {
+    width: 30%;
+    height: 100%;
+    padding: 1em;
+    border-right: 1px solid var(--border-color);
+    .rule-point {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      .rule-point-top {
+        overflow: auto;
+      }
+      .rule-point-ls {
+        display: flex;
+        flex-direction: column;
+        .rule-point-val {
+          margin-right: 1em;
+        }
+      }
+    }
+  }
+  .ar-edit-right {
+    flex: 1;
+    padding: 1em;
+    .arule-form {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .row1 {
+        width: 100%;
+        .ant-form-item-row {
+          flex-wrap: wrap !important;
+        }
+      }
+    }
+    
+  }
+}

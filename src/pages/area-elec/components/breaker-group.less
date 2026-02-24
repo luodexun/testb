@@ -1,0 +1,45 @@
+@import "@/styles/layout-flex";
+.breaker-group-wrap {
+  .flex-column(1em, flex-start, flex-start);
+  .max-word-wrap {
+    overflow: hidden;
+    white-space: normal;
+    word-break: normal;
+    word-wrap: break-word;
+  }
+  .system-wrap {
+    .d-flex(1em, center, flex-start);
+    width: 100%;
+
+    &:nth-child(even) {
+      background-color: rgba(55, 117, 178, 0.27);
+    }
+    .system-name {
+      align-self: center;
+      width: 14em;
+      .max-word-wrap;
+    }
+    .breaker-list-box {
+      flex: 1;
+      .d-flex(1em, flex-start, flex-start);
+      flex-wrap: wrap;
+
+      .item {
+        .d-flex(0.5em, center, flex-start);
+        .icon {
+          display: block;
+          width: 0.7em;
+          height: 1.4em;
+          background-color: #1fe005;
+          &.offline {
+            background-color: #ff0000;
+          }
+        }
+        .value {
+          width: 20em;
+          .max-word-wrap;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.ah-screen-box {
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  position: relative;
+  .ah-snbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .ah-snbox-top {
+      width: 100%;
+      height: 2em; 
+    }
+    .ah-snbox-bottom {
+      width: 100%;
+      height: 2em;
+    }
+    .ah-snbox-center {
+      flex: 1;
+    }
+    .ah-snbox-center1 {
+      .box-i-bg("box-center1")
+    }
+    .ah-snbox-top1 {
+      .box-i-bg("box-top1")
+    }
+    .ah-snbox-bottom1 {
+      .box-i-bg("box-bottom1")
+    }
+    .ah-snbox-center2 {
+      .box-i-bg("box-center2")
+    }
+    .ah-snbox-top2 {
+      .box-i-bg("box-top2")
+    }
+    .ah-snbox-bottom2 {
+      .box-i-bg("box-bottom2")
+    }
+    .box-i-bg(@img) {
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-image: ~"url(@/assets/anhui-screen/@{img}.png)";
+    }
+  }
+  .ah-box-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .ah-snbox-header {
+      display: flex;
+      align-items: center;
+      margin-left: 1em;
+      z-index: 2;
+      .header-icon {
+        width: .5em;
+        height: 1.6em;
+        margin-right: 1em;
+        background-color: rgba(0, 255, 201, 1);
+      }
+      .header-title {
+        font-size: 2em;
+        line-height: 1.2em;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+    .ah-snbox-con {
+      width: 100%;
+      flex: 1;
+    }
+  }
+  
+}

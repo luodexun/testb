@@ -1,0 +1,42 @@
+.stList-item {
+  width: 12.625rem;
+  height: 5.8125rem;
+  padding: .5625rem 1.3125rem;
+  margin: 0 1.875rem 1.875rem 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../../assets/weather/wbox.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  .stList-item-left {
+    width: 3.125rem;
+    display: flex;
+    justify-content: center;
+  }
+  .stList-item-right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    .stList-item-right--value {
+      min-width: 5rem;
+      color: #539FFF;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .stList-value-value {
+      font-size: 1.875rem;
+      line-height: 1.875rem;
+      color: #539FFF;
+    }
+    .stList-value-unit {
+      font-size: .875rem;
+      color: #539FFF;
+    }
+  }
+  
+}

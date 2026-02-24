@@ -1,0 +1,275 @@
+{
+  "id": "3948944",
+  "name": "风功率",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "538884",
+      "name": "退出",
+      "font_class": "loginout",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "1304895",
+      "name": "用户-圆",
+      "font_class": "user",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "1319968",
+      "name": "告警信息",
+      "font_class": "alarm-info",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "2076189",
+      "name": "收藏",
+      "font_class": "collect",
+      "unicode": "e86d",
+      "unicode_decimal": 59501
+    },
+    {
+      "icon_id": "2076418",
+      "name": "修改",
+      "font_class": "edit",
+      "unicode": "e8cf",
+      "unicode_decimal": 59599
+    },
+    {
+      "icon_id": "4510303",
+      "name": "收藏3",
+      "font_class": "collected",
+      "unicode": "e906",
+      "unicode_decimal": 59654
+    },
+    {
+      "icon_id": "11372697",
+      "name": "声音关闭",
+      "font_class": "voice-off",
+      "unicode": "e8b8",
+      "unicode_decimal": 59576
+    },
+    {
+      "icon_id": "11372700",
+      "name": "声音",
+      "font_class": "voice-on",
+      "unicode": "e8b9",
+      "unicode_decimal": 59577
+    },
+    {
+      "icon_id": "12331645",
+      "name": "帮助",
+      "font_class": "help",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "15668868",
+      "name": "区域配置",
+      "font_class": "area-point",
+      "unicode": "e77d",
+      "unicode_decimal": 59261
+    },
+    {
+      "icon_id": "5387756",
+      "name": "键盘_o",
+      "font_class": "jianpan_o",
+      "unicode": "eb4b",
+      "unicode_decimal": 60235
+    },
+    {
+      "icon_id": "5387424",
+      "name": "设备搜索",
+      "font_class": "shebeisousuo",
+      "unicode": "ead2",
+      "unicode_decimal": 60114
+    },
+    {
+      "icon_id": "5387793",
+      "name": "设备搜索_o",
+      "font_class": "shebeisousuo_o",
+      "unicode": "eb58",
+      "unicode_decimal": 60248
+    },
+    {
+      "icon_id": "8802635",
+      "name": "系统管理",
+      "font_class": "xitongguanli2",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "17654833",
+      "name": "视频监控",
+      "font_class": "shipinjiankong",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "19011685",
+      "name": "监管上报",
+      "font_class": "regulatory-reporting",
+      "unicode": "e7ba",
+      "unicode_decimal": 59322
+    },
+    {
+      "icon_id": "11464299",
+      "name": "风机",
+      "font_class": "fengji",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "2953970",
+      "name": "风电",
+      "font_class": "fengdian",
+      "unicode": "e74c",
+      "unicode_decimal": 59212
+    },
+    {
+      "icon_id": "26927469",
+      "name": "xianshi",
+      "font_class": "xianshi",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "26927472",
+      "name": "yincang",
+      "font_class": "yincang",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "27835399",
+      "name": "清空",
+      "font_class": "qingkong",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "5830216",
+      "name": "Alarm",
+      "font_class": "Alarm",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "10914793",
+      "name": "alarm-warning-fill",
+      "font_class": "alarm-warning-fill",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "12260287",
+      "name": "MPIS-AlarmTps",
+      "font_class": "MPIS-AlarmTps",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "866083",
+      "name": "修复_repair3",
+      "font_class": "xiufurepair3",
+      "unicode": "e880",
+      "unicode_decimal": 59520
+    },
+    {
+      "icon_id": "876799",
+      "name": "系统修复",
+      "font_class": "xitongxiufu",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "5286709",
+      "name": "多选",
+      "font_class": "duoxuan",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "17291910",
+      "name": "表格-取消",
+      "font_class": "quxiao",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "593015",
+      "name": "System",
+      "font_class": "system",
+      "unicode": "e6ea",
+      "unicode_decimal": 59114
+    },
+    {
+      "icon_id": "4388175",
+      "name": "服务方确认与上报",
+      "font_class": "querenyushangbao",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "5428140",
+      "name": "业务管理",
+      "font_class": "yewuguanli",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "7905568",
+      "name": "系统管理",
+      "font_class": "xitongguanli",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "12694055",
+      "name": "系统管理",
+      "font_class": "xitongguanli1",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "12889889",
+      "name": "统计分析",
+      "font_class": "tongjifenxi",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "21789687",
+      "name": "system management",
+      "font_class": "system-manage",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "22091993",
+      "name": "实时监控",
+      "font_class": "shishijiankong",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "23701103",
+      "name": "DeviceManage-Filled",
+      "font_class": "DeviceManage-Filled",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "24277175",
+      "name": "预报",
+      "font_class": "yubao",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    }
+  ]
+}

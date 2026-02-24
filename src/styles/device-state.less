@@ -1,0 +1,23 @@
+@import "@/styles/variables";
+
+// 设备控制按钮颜色
+//noinspection CssUnknownProperty
+@control-type-set: {
+  control-start: #11587c;
+  control-stop: #65234c;
+  control-reset: #987b5e;
+  control-left: #163c83;
+  control-right: #163c83;
+  control-limit: #163c83;
+};
+
+.control-btn-color(@name, @color) {
+  @light: darken(@color, 10%);
+  @fade-in: fadein(@color, 30%);
+  @side: multiply(@fade-in, #d0d0d0);
+  @middle: multiply(@light, #d0d0d0);
+  .@{name} {
+    color: var(--fontcolor);
+    background: linear-gradient(0deg, @side 0, @middle 20%, @middle 80%, @side);
+  }
+}

@@ -1,0 +1,94 @@
+@import "@/styles/layout-flex";
+@import "@/styles/icon-font/icon-font";
+
+.head-info-wrap {
+  .d-flex(0.5em, center, flex-end);
+  color: #77a0d1;
+
+  .head-company {
+    position: absolute;
+    left: 0;
+    height: var(--head-height);
+    width: 12%;
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .head-clock-wrap {
+    position: absolute;
+    left: 12%;
+  }
+  .center-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+  }
+  .ant-select-selection-placeholder {
+    color: var(--graycolor);
+  }
+  .alarm-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .alarm-total {
+      display: block;
+      height: 1.125rem;
+      padding: 0 .3125rem;
+      line-height: 1.025rem;
+      border: 1px solid rgba(255,41,41,0.65);
+      border-radius: 9px 9px 9px 9px;
+      background: linear-gradient(180deg, rgba(165,26,26,0.89) 0%, rgba(152,22,38,0.68) 64%, rgba(17,36,72,0.89) 100%);
+      position: relative;
+      top: -0.5rem;
+      left: -0.5rem;
+      font-size: .75rem;
+      color: #FFFFFF;
+      z-index: 99;
+    }
+  }
+  
+
+  @icon-list: last, next, collect, alarm, comloss, voice_true, voice_false, carousel, user, help, searchSt;
+  each(@icon-list, {
+    .i-@{value}  {
+      background: ~"url(@/assets/header/icon_@{value}.png)";
+    }
+  });
+
+  i[class*="i-"] {
+    display: block;
+    width: 2.3em;
+    height: 2.3em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.9;
+    cursor: pointer;
+    &:hover,
+    &.selected {
+      opacity: 1;
+    }
+  }
+
+  .user-name {
+    padding: 0 0.5em;
+    height: 2em;
+    line-height: 2em;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.ant-dropdown {
+  .icon-font {
+    .iconfont;
+    margin-right: 0.4em;
+    color: var(--deep-font-color);
+  }
+}

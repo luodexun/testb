@@ -1,0 +1,25 @@
+@import "@/styles/layout-flex";
+
+.area-power {
+  .flex-column(1em, flex-start);
+  .area-power-chart-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-content: flex-start;
+    justify-content: flex-start;
+    overflow: auto;
+
+    .info-card.ant-card {
+      width: calc((var(--chart-width, 100%) - 3em) / 3);
+      height: calc((var(--chart-height, 100%) - 3em) / 3);
+      .ant-card-body {
+        height: 100%;
+        overflow: hidden !important;
+        .chart-wrap {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

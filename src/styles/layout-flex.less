@@ -1,0 +1,11 @@
+.d-flex(@gap:0, @align: center, @justify: flex-start) {
+  display: flex;
+  align-items: @align;
+  justify-content: @justify;
+  gap: @gap;
+}
+
+.flex-column(@gap:0, @align: center, @justify: flex-start) {
+  .d-flex(@gap, @align, @justify);
+  flex-direction: column;
+}

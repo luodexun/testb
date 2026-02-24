@@ -1,0 +1,66 @@
+.ah-screen {
+  width: 1920px;
+  height: 1080px;
+  font-size: 10px;
+  position: relative;
+  background-image: url(/src/assets/anhui-screen/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  .ah-screen-content {
+    width: 100%;
+    padding: 3.3em 4.4em;
+    flex: 1;
+    .ah-screen-content-box {
+      width: 100%;
+      height: 100%;
+      
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(/src/assets/anhui-screen/bg-nei.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    .ah-screen-left, .ah-screen-right {
+      width: 30%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .screen-lr40-box {
+        .screen-box-height(39.5%)
+      }
+      .screen-lr20-box {
+        .screen-box-height(20%)
+      }
+      .screen-lr12-box {
+        .screen-box-height(12%)
+      }
+      .screen-lr60-box {
+        .screen-box-height(60%)
+      }
+      .screen-lr28-box {
+        .screen-box-height(28%)
+      }
+      .screen-box-height(@height) {
+        height: @height;
+        width: 100%;
+      }
+    }
+    .ah-screen-center {
+      flex: 1;
+      height: 100%;
+    }
+    .station-select {
+      width: 14em;
+      z-index: 2;
+      position: absolute;
+      top: 2em;
+      right: .3em;
+    }
+    }
+  }
+}

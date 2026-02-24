@@ -1,0 +1,36 @@
+.gdscreen .gd-map-quota {
+  display: flex;
+  justify-content: space-between;
+  .btm-quota-item {
+    width: 33%;
+    .btm-item-top {
+      width: max-content;
+      margin-bottom: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @icon-list: PVINV, WT, ESPCS;
+      each(@icon-list, {
+        .type-@{value}  {
+          background-image: ~"url(@/assets/hubei-screen/@{value}.png)";
+        }
+      });
+      i {
+        height: 6.6em;
+        width: 5.4em;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+      }
+      .name {
+        font-size: 1.4em;
+      }
+    }
+    .btm-item-list {
+      width: 100%;
+      font-size: 7px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+@import "@/styles/layout-flex";
+
+.ant-app {
+  font-size: 1rem;
+}
+
+.ant-btn-primary,
+.ant-btn-default {
+  background: var(--btn-bg);
+  border: 1px solid var(--btn-border);
+}
+.ant-table {
+  scrollbar-color: inherit !important;
+  scrollbar-width: thin !important;
+}
+.ant-select {
+  background: var(--bg-linear-active);
+  .ant-select-arrow {
+    color: #3e70ee;
+  }
+  .ant-select-selection-placeholder {
+    color: #fff;
+  }
+}
+.ant-select-tree {
+  .ant-select-tree-node-selected {
+    background-color: #3e70ee !important;
+  }
+}
+.ant-pagination {
+  .ant-pagination-item{
+    background-color: transparent;
+  }
+  
+  .ant-pagination-item-active {
+    background: var(--bg-linear-active);
+    border: none;
+  }
+  .ant-pagination-options {
+    input[type="text"] {
+      background-color: var(--bgcolor);
+      border: none;
+    }
+  }
+}
+.ant-empty {
+  .flex-column(1em, center, center);
+  .ant-empty-image {
+    opacity: 0.6;
+  }
+}
+
+.ant-form .ant-input-number {
+  border-radius: 6px;
+  &.ant-input-number-focused,
+  &:focus,
+  &:hover {
+    border-color: var(--primary-color);
+  }
+  &.ant-input-number-focused,
+  &:focus {
+    box-shadow: 0 0 0 2px rgb(249 205 144 / 20%);
+  }
+}
+
+.ant-drawer-content-wrapper {
+  max-width: 100%;
+}
+
+.ant-radio-group.radio-button {
+  .d-flex(0, center, flex-end);
+  .ant-radio-button-wrapper {
+    width: 4em;
+    height: 2em;
+    display: block;
+    text-align: center;
+    line-height: 2em;
+    opacity: 0.6;
+    .radio-btn-bg {
+      background-image: url("@/assets/menu/rd_btn_bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .radio-btn-bg;
+    &:not(&.ant-radio-button-wrapper-disabled) {
+      color: var(--fontcolor);
+    }
+    &.ant-radio-button-wrapper-checked {
+      opacity: 1;
+      &:not(.ant-radio-button-wrapper-disabled):hover {
+        .radio-btn-bg;
+      }
+    }
+  }
+}
+.ant-picker-dropdown {
+  .ant-picker-now {
+    .ant-picker-now-btn {
+      color: var(--fontcolor);
+    }
+  }
+}

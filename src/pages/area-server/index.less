@@ -1,0 +1,68 @@
+@import "@/styles/layout-flex";
+
+.area-net-wrap {
+  overflow-y: scroll;
+  background-color: #02245E;
+  .content-box {
+    
+    box-sizing: border-box;
+    transform-origin: 0 0 0;
+    .server-box {
+      .server-block-l {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+      }
+      .server-block-r {
+        flex: 1;
+        display: flex;
+      }
+      .server-block-l,.server-block-r {
+        .server-block {
+
+          .server-type {
+            height: 32px;
+            line-height: 32px;
+            margin:10px;
+            text-indent: 14px;
+            text-align: left;
+            background: linear-gradient(90deg, #3562ce, transparent);
+          }
+          .server-list {
+            flex: 1;
+            display: flex;
+            // flex-wrap: wrap;
+            // justify-content: space-between;
+          }
+        }
+      }
+      .server-block-r {
+        .server-block {
+          .server-list {
+            flex-wrap: wrap;
+            // justify-content: space-between;
+          }
+        }
+      }
+    }
+    .server-detail {
+      padding: 16px;
+      .top-btn {
+        // .gray-back-button {
+        //   &:hover,&:focus {
+        //     border-color: #999;
+        //     color: #333;
+        //   }
+        // }
+        .server-type {
+          margin: 0 16px;
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+      .content {
+        position: relative;
+      }
+    }
+  }
+}

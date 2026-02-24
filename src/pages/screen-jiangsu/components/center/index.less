@@ -1,0 +1,108 @@
+.js-screen .js-center {
+  height: 100%;
+  display: flex;
+  padding: 7em 2em 0 2em;
+  position: relative;
+  .js-center-left {
+    width: 18%;
+  }
+  .js-center-left2 {
+    width: 12%;
+    height: 100%;
+    margin-left: 2em;
+    .js-cleft {
+      height: 100%;
+      background-image: url(/src/assets/jiangsu-screen/ml-box.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: flex;
+      position: relative;
+      .js-cleft-name {
+        height: max-content;
+        font-size: 3.2em;
+        writing-mode: vertical-rl;
+        position: absolute;
+        top: 11em;
+        left: 1.5em;
+      }
+      .js-cleft-right {
+        width: 80%;
+        position: absolute;
+        top: 12em;
+        left: 13em;
+        .center-lquota-item {
+          margin-bottom: 6em
+        }
+      }
+    }
+  }
+  .js-center-map {
+    width: 40%;
+    height: 100%;
+    .map-center {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      .icon-list {
+        position: absolute;
+        bottom: 5em;
+        right: -20em;
+        @icon-list: control, PVINV, WT;
+        each(@icon-list, {
+          .icon-@{value}  {
+            background-image: ~"url(@/assets/jiangsu-screen/@{value}.png)";
+          }
+        });
+        i {
+          height: 4.7em;
+          width: 3.3em;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        .icon-name {
+          font-size: 2.8em;
+          
+        }
+        .icon-list-item {
+          display: flex;
+          margin-bottom: 2em;
+          span {
+            margin-left: 1em;
+          }
+        }
+      }
+    }
+  }
+  .js-center-right {
+    position: absolute;
+    right: 2.8em;
+  }
+  .js-map-tbox {
+    padding: 1.8em;
+    font-size: 10px;
+    color: var(--white-color);
+    background-image: url(/src/assets/large-screen/map-tl.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    .map-tbox-title {
+      margin-bottom: 1em;
+      background: rgba(16, 149, 255, 0.27);
+      color: rgba(0, 242, 255, 1);
+      text-align: center;
+      font-size: 1.8em;
+      line-height: 2em;
+    }
+    .map-tbox-cnt {
+      // padding: 0 2em 2em;
+      .map-cnt-item {
+        margin-bottom: 1em;
+        .cnt-item-value {
+          font-size: 2em;
+          
+        }
+      }
+    }
+    
+  }
+}

@@ -1,0 +1,45 @@
+@import "@/styles/layout-flex";
+.alarm-rule-wrap {
+  .d-flex(1em, center, space-between);
+  padding: 1em;
+  background: linear-gradient(0deg, #101e47, #0e0e36);
+  position: relative;
+  .alarm-rule-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+  }
+  .ant-btn-circle {
+    background: #1b294b url("@/assets/site/back.png") no-repeat center;
+    background-size: 70%;
+    border: none;
+    outline: none;
+  }
+  .alarm-rule-left {
+    .flex-column(1em, flex-start, flex-start);
+    padding: 1em;
+    height: 100%;
+    width: 20%;
+    border: 2px solid #12305e;
+    .rule-left-bottom {
+      width: 100%;
+      height: 92%;
+    }
+  }
+  .alarm-rule-right {
+    width: 80%;
+    height: 100%;
+    .alrule-table {
+      display: flex;
+      flex-direction: column;
+      // width: 100%;
+    }
+  }
+}
+.alarm-rule {
+  position: relative;
+  .ant-drawer .ant-drawer-body {
+    padding: 0;
+  }
+}

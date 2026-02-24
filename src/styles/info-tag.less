@@ -1,0 +1,37 @@
+.info-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.info-value(@color: var(--white-color), @overflow: hidden) {
+  overflow-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: @overflow;
+  color: @color;
+  font-weight: 600;
+}
+
+.info-unit(@color: var(--fontcolor)) {
+  padding-left: 0.2em;
+  color: var(--fontcolor);
+  font-size: 0.8em;
+  opacity: 0.6;
+}
+
+@import "@/styles/layout-flex";
+.value-unit(@vc: var(--white-color)) {
+  .value-unit {
+    .d-flex(0.2em, center, space-between);
+    flex: 1;
+    .info-value {
+      .info-value(@vc,visible);
+      flex: 1;
+      text-align: center;
+    }
+    .info-unit {
+      .info-unit();
+      white-space: nowrap;
+    }
+  }
+}

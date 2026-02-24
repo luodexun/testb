@@ -1,0 +1,39 @@
+.layout-content {
+  margin: 0;
+  height: 100%;
+  flex-direction: row;
+  position: relative;
+  // 左侧菜单栏滚动条
+  .layout-sider {
+    position: relative;
+    height: 100%;
+    //perspective: 4em;
+    //transform-style: preserve-3d;
+    .collapse-icon {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      z-index: 1;
+      font-size: 1.5em;
+      color: var(--bg-hover);
+      cursor: pointer;
+      transition: transform 300ms linear;
+      &:hover {
+        color: var(--bg-active);
+      }
+      &.on {
+        transform: scaleY(2) translateX(0) translateY(-50%);
+      }
+      &.off {
+        transform: scaleY(2) translateX(50%) translateY(-50%) rotateY(180deg);
+      }
+    }
+  }
+  .layout-memory {
+    position: absolute;
+    bottom: 0;
+    left: 1em;
+    font-size: 12px;
+    color: #8e8e8e;
+  }
+}

@@ -1,0 +1,33 @@
+.yaoce-box {
+  height: 100%;
+  padding: 0.2em 0 0.2em 0.2em;
+  border: 1px solid rgba(62,112,238,0.38);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  .tooltip-name {
+    padding: 0.3em 0.7em;
+    color: var(--white-color);
+    position: absolute;
+    // top: -1.5em;
+    left: 3em;
+    z-index: 10;
+    background-color: #4c4949;
+    white-space: nowrap;
+    border-radius: 0.4em;
+  }
+  .monitor-tbt-name {
+    width: 65%;
+    word-break: break-all;
+  }
+  .monitor-tbt-value {
+    width: 20%;
+    word-break: break-all;
+    line-height: 1;
+  }
+  .monitor-tbt-unit {
+    width: 15%;
+    padding-left: 0.3em;
+  }
+}

@@ -1,0 +1,38 @@
+.sx-screen-modal {
+  overflow: hidden;
+  font-size: 10px;
+  // height: 180em;
+  overflow: auto;
+  .sx-screen-setting {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: space-between;
+    .setting-left, .setting-right {
+      width: 30%;
+      height: 100%;
+      .setting-pdt, .setting-rltime  {
+        height: 60%;
+        border: 1px dashed #164ec5;
+        overflow: auto;
+      }
+      .setting-elec, .setting-ovw {
+        height: 39%;
+        border: 1px dashed #164ec5;
+        overflow: auto;
+      }
+    }
+    .setting-center {
+      flex: 1;
+      height: 100%;
+      margin: 0 1em;
+      border: 1px dashed #164ec5;
+    }
+    .setting-title {
+      font-size: 2em;
+    }
+  }
+  .screen-btn {
+    float: right;
+  }
+}

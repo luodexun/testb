@@ -1,0 +1,45 @@
+.gd-center-top {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 8px;
+  .gd-center-tbox {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    // margin-right: 4em;
+    .tbox-right {
+      display: flex;
+      flex-direction: column;
+      margin-left: 2em;
+      .tbox-right-name {
+        font-size: 1.6em;
+      }
+      .tbox-right-value {
+        @font-face {
+          font-family: DigitalFont;
+          src: url(@/styles/font/dp-hei.ttf);
+        }
+        font-family: DigitalFont, sans-serif;
+        font-size: 3em;
+        line-height: 1.5em;
+        color: rgba(81, 145, 255, 1);
+        // margin-top: 2em;
+      }
+    }
+    @icon-list: capacity, actPower, day, speed, radiation;
+    each(@icon-list, {
+      .i-@{value}  {
+        background-image: ~"url(@/assets/common-screen/@{value}.png)";
+      }
+    });
+    i {
+      height: 5.1em;
+      width: 6.9em;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  
+}

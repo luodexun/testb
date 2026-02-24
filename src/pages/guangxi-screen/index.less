@@ -1,0 +1,123 @@
+// 设计稿宽度8400，font-size为10px
+.wrap-page {
+  width: 100%;
+  height: 100%;
+  padding: 0 4em 0 7em;
+  font-size: 2.3px;
+  background-image: url(/src/assets/large-screen/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  
+  .screen-content {
+    width: 100%;
+    position: relative;
+    flex: 1;
+    display: flex;
+    padding-top: 7em;
+    align-items: center;
+    // margin-bottom: 70em;
+    justify-content: space-between;
+    overflow: hidden;
+    .screen-content-left {
+      width: 137.1em;
+      height: 100%;
+      padding: 18em 5em;
+      .screen-left {
+        width: 100%;
+      }
+    }
+    .screen-content-center {
+      // width: 390.6em;
+      // height: 280em;
+      width: 70%;
+      height: 100%;
+      position: absolute;
+      left: 45%;
+      top: 50%;
+      transform: translate(-42%, -50%);
+    }
+    .screen-content-right {
+      // height: 127em;
+      .quota {
+        // height: 100%;
+        width: 120em;
+        .quota-list {
+          width: 100%;
+          padding: 4em 5em;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-bottom: 8em;
+          background-image: url(/src/assets/large-screen/quato.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          // .quota-item {
+          //   position: relative;
+          //   width: 76em;
+          //   height: 10em;
+          //   margin-top: 8.6em;
+          //   margin-right: 10em;
+          //   display: flex;
+          //     @icon-list: 1, 2, 3, 4, 5;
+          //     each(@icon-list, {
+          //       .i-@{value}  {
+          //         background-image: ~"url(@/assets/large-screen/icon_@{value}.png)";
+          //       }
+          //     });
+          //   i {
+          //     width: 18em;
+          //     height: 19em;
+          //     position: absolute;
+          //     left: 0;
+          //     bottom: 0;
+          //     z-index: 2;
+          //     // background-image: url(/src/assets/large-screen/icon1.png);
+          //     background-repeat: no-repeat;
+          //     background-size: contain;
+          //   }
+          //   .quota-item-content {
+          //     width: 100%;
+          //     height: 13em;
+          //     margin-top: auto;
+          //     background-image: url(/src/assets/large-screen/tiao.png);
+          //     background-repeat: no-repeat;
+          //     background-size: cover;
+          //     position: relative;
+          //     display: flex;
+          //     align-items: center;
+          //     justify-content: center;
+          //     span {
+          //       margin-left: 0.5em;
+          //       font-size: 4.7em;
+          //       display: inline-block;
+          //     }
+          //     .quota-name {
+          //       min-width: 30%;
+          //       text-align: center;
+          //     }
+          //     .quota-value {
+          //       width: 100%;
+          //       position: absolute;
+          //       top: -1em;
+          //       text-align: center;
+          //       font-size: 9.4em;
+          //       font-weight: 600;
+          //     }
+          //     .quota-unit {
+          //       min-width: 20%;
+          //       text-align: left;
+          //     }
+          //   }
+          // }
+          
+        }
+      }
+    }
+  }
+  /deep/ .tooltip {
+    font-size: 7em;
+  }
+}

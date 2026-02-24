@@ -1,0 +1,41 @@
+.sx-overview {
+  padding: 3em 1.8em 0 1.8em;
+  display: flex;
+  flex-wrap: wrap;
+  .sx-ovw-item {
+    width: 48%;
+    margin-bottom: 3.5em;
+    display: flex;
+    @icon-list: wt, total, pv;
+    each(@icon-list, {
+      .c-@{value}  {
+        background-image: ~"url(@/assets/shanxi-screen/v-@{value}.png)";
+      }
+    });
+    .ovw-item-left {
+      width: 7em;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .ovw-item-right {
+      .item-name {
+        font-size: 1.8em;
+        color: #ffffff;
+        line-height: 2em;
+      }
+      .item-btm {
+        line-height: 1;
+      }
+      .item-val {
+        font-size: 2.5em;
+        color: rgba(75, 212, 255, 1);
+        font-weight: bold;
+      }
+      .item-unit {
+        margin-left: 1em;
+        font-size: 1.2em;
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+}

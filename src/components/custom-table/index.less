@@ -1,0 +1,27 @@
+@import "@/styles/layout-flex";
+.custom-table {
+  width: 100%;
+  height: 100%;
+  .ant-spin-nested-loading,
+  .ant-spin-container {
+    .flex-column(0, flex-start, flex-start);
+    width: 100%;
+    height: 100%;
+    .ant-table {
+      width: 100%;
+      height: 100%;
+      @import "@/styles/custom-table-style";
+      .table-head-gray;
+    }
+    .ant-table-small {
+      --scrollbar-width: 4px;
+      --scrollbar-height: 4px;
+      --scrollbar-bd-radius: 2px;
+    }
+  }
+
+  .ant-pagination {
+    width: 100%;
+    margin: 1em 0 0 !important;
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "id": "4270355",
+  "name": "集控",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "25068595",
+      "name": "充电站管理",
+      "font_class": "chongdianzhanguanli",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    },
+    {
+      "icon_id": "8334915",
+      "name": "工作转速",
+      "font_class": "gongzuozhuansu",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "18446083",
+      "name": "频率",
+      "font_class": "pinshuai",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "22723476",
+      "name": "耗电量",
+      "font_class": "haodianliang",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "23967308",
+      "name": "位置",
+      "font_class": "weizhi",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "25716499",
+      "name": "风速",
+      "font_class": "fengsu",
+      "unicode": "ea32",
+      "unicode_decimal": 59954
+    },
+    {
+      "icon_id": "6943378",
+      "name": "发电量",
+      "font_class": "fadianliang",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "11810533",
+      "name": "旋转角度",
+      "font_class": "xuanzhuanjiaodu",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "12331651",
+      "name": "电流",
+      "font_class": "dianliu",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "12331657",
+      "name": "电压",
+      "font_class": "dianya",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "12331669",
+      "name": "功率",
+      "font_class": "gongshuai",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "12331688",
+      "name": "温度",
+      "font_class": "wendu",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "16116391",
+      "name": "有功功率",
+      "font_class": "yougonggongshuai",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "16170158",
+      "name": "synchronize",
+      "font_class": "synchronize",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "28606922",
+      "name": "风向",
+      "font_class": "fengxiang",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
+    },
+    {
+      "icon_id": "35438678",
+      "name": "元素-角度",
+      "font_class": "yuansu-jiaodu",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

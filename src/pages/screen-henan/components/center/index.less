@@ -1,0 +1,66 @@
+.hn-screen-center {
+  height: 100%;
+  padding: 0 6em;
+  .hn-sct-top {
+    height: 75%;
+  }
+  .hn-sct-bottom {
+    height: 24%;
+    width: 100%;
+    .hn-qt-btm {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      .hn-qt-btm-item {
+        width: 30%;
+        height: max-content;
+        padding: 0 2em;
+        background-image: url(@/assets/henan-screen/qb.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        .btm-top {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 2em;
+          .btm-top-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .val {
+              font-size: 3em;
+              line-height: 2.5;
+              color: var(--white-color);
+              font-weight: bold;
+            }
+            .name {
+              font-size: 2em;
+            }
+          }
+        }
+        .btm-bottom {
+          width: 100%;
+          height: 6em;
+          margin-bottom: 1em;
+          background-image: url(@/assets/henan-screen/qb-btm.png);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          color: var(--white-color);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+          .bt-name, .bt-val {
+            width: 40%;
+            text-align: center;
+            font-size: 2.2em;
+          }
+          .bt-val {
+            width: 45%;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

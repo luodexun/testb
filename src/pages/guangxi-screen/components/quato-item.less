@@ -1,0 +1,54 @@
+.common-quato {
+  .quato-one {
+    height: 18.6em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5em;
+    .quato-one-name {
+      font-size: 4.7em;
+      font-weight: 600;
+    }
+    i {
+      margin-right: 6em;
+    }
+    .quato-one-value {
+      font-size: 6.5em;
+      font-weight: 600;
+      flex: 1;
+      text-align: right;
+    }
+  }
+  .quato-horizon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+    .quato-one-name {
+      font-size: 4.7em;
+      font-weight: 600;
+    }
+    .quato-one-value {
+      font-size: 6.5em;
+      font-weight: 600;
+      flex: 1;
+      margin: 0.2em 0;
+    }
+  }
+  
+  @icon-list: 1, 2, 3, 4, 5;
+    each(@icon-list, {
+      .i-@{value}  {
+        background-image: ~"url(@/assets/large-screen/icon_@{value}.png)";
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    });
+  i {
+    width: 21em;
+    height: 21em;
+  }
+}

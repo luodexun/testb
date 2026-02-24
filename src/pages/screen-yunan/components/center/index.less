@@ -1,0 +1,52 @@
+.yn-center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  .yn-center-top {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+    .map-center {
+      height: 92%;
+      width: 100%;
+      padding: 10em 0 2em 0;
+    }
+    .site-name {
+      font-size: 2.8em;
+      @font-face {
+        font-family: DigitalFont;
+        src: url(@/styles/font/dp-hei.ttf);
+      }
+      font-family: DigitalFont, sans-serif;
+    }
+    .map-tbox {
+      padding: 0 1em;
+      font-size: 1.8em;
+      line-height: 2;
+      color: var(--white-color);
+      background-color: RGBA(1, 25, 33, 1);
+    }
+  }
+  .yn-center-bottom {
+    width: 80%;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    .ct-quota {
+      width: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      &::after {
+        content: "";
+        width: 1px;
+        height: 50px;
+        background-color: rgba(0, 129, 155, 1);
+      }
+    }
+  }
+  
+}

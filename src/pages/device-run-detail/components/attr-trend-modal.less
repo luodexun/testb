@@ -1,0 +1,42 @@
+.attr-trend-modal {
+  z-index: 10;
+  font-size: 12px;
+  .trend-out {
+    width: 100%;
+    height: 52em;
+    padding: 2.5em 1.25em;
+    background-image: url(@/assets/dialog/bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    .trend-out-box {
+      height: 100%;
+      padding: 1em;
+      background: linear-gradient(180deg, rgba(14, 33, 100, 0.93) 0%, rgba(15, 34, 97, 0.93) 100%);
+      display: flex;
+      flex-direction: column;
+      .trend-box-top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: .8em .8em .8em 0;
+        font-size: 1.2em;
+      }
+      .trend-box-name {
+        // fons
+      }
+    }
+  }
+  position: absolute;
+  width: 70%;
+}
+.attr-trend {
+  position: relative;
+  // height: 450px;
+  flex: 1;
+  .attr-data-select {
+    position: absolute;
+    top: -0.2em;
+    right: 2em;
+    z-index: 1;
+  }
+}

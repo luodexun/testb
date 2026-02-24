@@ -1,0 +1,29 @@
+@import "@/styles/layout-flex";
+
+.site-agvc-wrap {
+  .flex-column(0, flex-start);
+  overflow: hidden;
+  position: relative;
+  .site-name {
+    margin-bottom: .625rem
+  }
+  .info-card-wrap {
+    .flex-column(0, flex-start);
+    flex: 1 0 0;
+    overflow: hidden;
+    .info-card {
+      flex: 1 0 0;
+      height: 100%;
+      width: 100%;
+      .ant-card-body {
+        flex: 1;
+        padding-top: 1.25rem;
+      }
+    }
+  }
+  .site-agvc-hd {
+    position: absolute;
+    right: 2em;
+    top: 0.5em;
+  }
+}

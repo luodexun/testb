@@ -1,0 +1,43 @@
+.nx-screen {
+  width: 4230px;
+  height: 1080px;
+  font-size: 10px;
+  position: relative;
+  background-image: url(/src/assets/ningxia-screen/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  .screen-content {
+    height: 100%;
+    padding: 5em 5em;
+    display: flex;
+    justify-content: space-between;
+    z-index: 12;
+    .screen-left, .screen-right {
+      width: 31.5%;
+      height: 100%;
+      overflow: hidden;
+    }
+   
+    .screen-center {
+      flex: 1;
+      height: 100%;
+      padding: 0 2em;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+}
+.nx-screen-select {
+  font-size: 10px !important;
+  .ant-select-item-option {
+    font-size: 1.6em !important;
+    line-height: 1.3em;
+  }
+  .ant-select-tree {
+    font-size: 1.6em;
+  }
+}

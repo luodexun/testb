@@ -1,0 +1,39 @@
+@import "@/styles/layout-flex";
+.alarm-real {
+  height: 100%;
+  padding: 2rem;
+  background: linear-gradient(0deg, #101e47, #0e0e36);
+  .alarm-real-header {
+    
+    .alarm-real-header--search {
+      display: flex;
+    }
+    .alarm-real-header--btn {
+      text-align: right;
+      .ant-btn-primary {
+        // margin-left: 1rem;
+        &:hover {
+          background: var(--bg-linear-active);
+        }
+      }
+    }
+  }
+  .alarm-table {
+    margin-top: 20px;
+    height: calc(100% - 7.25rem);
+  }
+  .ant-table-wrapper {
+    overflow: hidden;
+    .ant-table-container {
+      height: 100%;
+    }
+  }
+  .ant-pagination {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .ant-dropdown-menu {
+    background-color: var(--primary-color);
+  }
+}

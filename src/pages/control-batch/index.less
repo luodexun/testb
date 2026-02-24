@@ -1,0 +1,58 @@
+@import "@/styles/layout-flex";
+
+.control-batch-wrap {
+  .d-flex(1em, center, space-between);
+  padding: 1em;
+  background: linear-gradient(0deg, #101e47, #0e0e36);
+  position: relative;
+
+  .control-batch-left {
+    .flex-column(1em, flex-start, flex-start);
+    padding: 1em;
+    height: 100%;
+    width: 20%;
+    border: 2px solid #12305e;
+    .batch-left-top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .ant-select {
+      width: 100%;
+    }
+  }
+  .control-batch-right {
+    flex: 1 0 0;
+    .flex-column(1em, flex-start, flex-start);
+    height: 100%;
+    overflow: auto;
+    .control-btn-group {
+      height: 3em;
+      flex-direction: row;
+      justify-content: flex-start;
+      .btn-row {
+        width: unset;
+        .ant-btn {
+          padding: 0.4em 2em;
+          font-size: 1.2em;
+          line-height: 1em;
+        }
+      }
+    }
+  }
+  .float-search {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #081D3D;
+    width: 24em;
+    padding: 1em;
+    .float-search-title {
+      border-bottom: 1px solid;
+      margin-bottom: 1em;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

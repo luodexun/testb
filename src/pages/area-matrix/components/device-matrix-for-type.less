@@ -1,0 +1,18 @@
+@import "@/styles/layout-flex";
+
+.device-matrix-for-type {
+  .flex-column(1em, flex-start, flex-start);
+  padding: 0.5em 0.5em 0.5em 0;
+  width: 100%;
+
+  .device-info-and-operate {
+    --info-title-width: auto;
+
+    .d-flex(1em, center, space-between);
+    width: 100%;
+    overflow: hidden;
+    &:hover {
+      overflow: auto hidden;
+    }
+  }
+}

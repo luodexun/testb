@@ -1,0 +1,27 @@
+.js-screen .js-cright {
+    @icon-list: capacity, actPower, time, speed, day;
+    each(@icon-list, {
+      .i-@{value}  {
+        background-image: ~"url(@/assets/common-screen/@{value}.png)";
+      }
+    });
+    i {
+      height: 7.8em;
+      width: 10em;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  .js-cright-item {
+    width: 50em;
+    height: 13.6em;
+    margin-bottom: 1.7em;
+    padding: 4em;
+    background-image: url(/src/assets/jiangsu-screen/ml-quota.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

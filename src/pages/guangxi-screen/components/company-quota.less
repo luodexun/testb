@@ -1,0 +1,47 @@
+.cpn-quota {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10em;
+  .cpn-quota-item {
+    width: 80%;
+    height: 38em;
+    padding: 5em 10em;
+    margin-bottom: 10em;
+    background-image: url(/src/assets/large-screen/box1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    .item-top {
+      display: flex;
+      align-items: center;
+      .icon {
+        width: 6.2em;
+        height: 6.1em;
+        margin-right: 3em;
+        background-image: url(/src/assets/large-screen/box1-jian.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      .item-top-name {
+        font-size: 6.2em;
+      }
+    }
+    
+    .item-value {
+      // @font-face {
+      //   font-family: DigitalFont;
+      //   src: url(@/styles/font/digital_regular.ttf);
+      // }
+      // font-family: DigitalFont, sans-serif;
+      font-size: 9em;
+      font-weight: 600;
+      color: rgba(64, 118, 255, 1);
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

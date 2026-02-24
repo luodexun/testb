@@ -1,0 +1,37 @@
+.yn-com-quota-box {
+  display: flex;
+  flex-direction: column;
+  .cquota-box-name {
+    color: rgba(0, 242, 255, 1);
+    font-size: 2em;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    .name-line {
+      width: 0.2em;
+      height: 80%;
+      margin-bottom: 0.1em;
+      margin-right: 0.5em;
+    }
+  }
+  .cquota-box-value {
+    @font-face {
+      font-family: DigitalFont;
+      src: url(@/styles/font/dp-hei.ttf);
+    }
+    font-family: DigitalFont, sans-serif;
+    font-size: 3.2em;
+    line-height: 1.5em;
+    // color: rgba(81, 145, 255, 1);
+    // margin-top: 2em;
+  }
+  .unit {
+    margin-left: .3em;
+    color: rgba(0, 242, 255, 0.5);
+    font-size: 0.8em;
+  }
+  .unit-btm {
+    font-size: 1.6em;
+    margin-left: 0;
+  }
+}

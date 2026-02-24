@@ -1,0 +1,125 @@
+.pivot {
+  overflow-y: auto;
+}
+.pvtUi{
+  width: 100%;
+  .pvtOutput {
+    width: 80%;
+    .pvtTable {
+      width: 100%;
+      thead {
+        tr {
+          th { 
+            background-color: var(--table-head-color);
+            border: 1px solid var(--btn-border);
+            color: var(--white-color);
+          }
+        }
+      }
+      tbody {
+        tr {
+          color: var(--white-color);
+          td {
+            color: var(--white-color);
+            background-color: #010219;
+            border: 1px solid var(--btn-border);
+          }
+          .pvtRowLabel, .pvtTotalLabel {
+            background-color: var(--table-head-color);
+            border: 1px solid var(--btn-border);
+          }
+        }
+      }
+    }
+  }
+  .pvtAxisContainer, .pvtVals {
+    background: transparent;
+    border-color: var(--border-color);
+  }
+  .pvtVals {
+    .pvtRowOrder, .pvtColOrder {
+      color: var(--border-color);
+    }
+  }
+  .pvtHorizList, .pvtVertList {
+    .pvtAttr {
+      background: var(--btn-bg);
+      border: 1px solid var(--btn-border);
+      color: var(--white-color);
+    }
+  }
+  .pvtFilterBox {
+    background-color: var(--primary-color);
+    .pvtCloseX, .pvtDragHandle, h4 {
+      color: var(--white-color);
+    }
+    input {
+      border: 1px solid var(--border-color);
+      background: var(--input-bg);
+    }
+    .pvtButton {
+      background: var(--btn-bg);
+      border: 1px solid var(--btn-border);
+      color: var(--white-color);
+    }
+    .pvtCheckContainer {
+      padding: 1rem;
+      .selected {
+        background-color: var(--split-color);
+        color: var(--white-color);
+      }
+    }
+  }
+  .pvtDropdown {
+    .pvtDropdownCurrent {
+      border: 1px solid var(--border-color);
+      background: var(--input-bg);
+      color: var(--white-color);
+    }
+    .pvtDropdownMenu {
+      background-color: var(--primary-color);
+      color: var(--fontcolor);
+      .pvtDropdownActiveValue {
+        background-color: #3e70ee
+      }
+    }
+  }
+  
+}
+
+.pivot-panel {
+  display: flex;
+  justify-content: space-between;
+  .pivot-panel-left {
+    width: 39%;
+    height: 100%;
+    .wj-pivotpanel {
+      height: calc(100% - 32px);
+    }
+  }
+  .wj-content {
+    border-color: var(--border-color);
+  }
+  .wj-control {
+    background: transparent;
+    color: var(--white-color);
+    
+    .wj-row {
+      .wj-header {
+        background: var(--table-head-color);
+        color: var(--white-color);
+      }
+    }
+    .wj-cells {
+      .wj-cell {
+        // background: var(--bgcolor);
+      }
+      .wj-align-right {
+        background: var(--bgcolor);
+      }
+    }
+  }
+  .wj-flexchart {
+    height: 100%;
+  }
+}

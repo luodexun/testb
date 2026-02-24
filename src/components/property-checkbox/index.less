@@ -1,0 +1,23 @@
+.property-box {
+  height: 40em;
+  position: absolute;
+  top: 5em;
+  right: 5em;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: var(--bg-active);
+  opacity: 1;
+  z-index: 99;
+  overflow: auto;
+  .ant-checkbox-group {
+    display: flex;
+    flex-direction: column;
+  }
+  &.hidden {
+    visibility: hidden;
+  }
+  .btn-list {
+    margin-top: 1em;
+    text-align: right;
+  }
+}

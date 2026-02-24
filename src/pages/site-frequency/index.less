@@ -1,0 +1,40 @@
+.site-dv-wrap {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  .site-dv-table {
+    flex: 1;
+    overflow: hidden;
+  }
+  .site-dv-chart {
+    height: 80%;
+  }
+  .status-switch {
+    .com {
+      font-size: 1.3em;
+      margin-left: .5em;
+    }
+    .com-act {
+      color: red;
+    }
+    .com-unact {
+      color: green;
+    }
+    .ant-switch {
+      background: RGBA(63, 69, 88, 1);
+      .ant-switch-handle {
+        &::before {
+          background-color: var(--success-color);
+        }
+      }
+    }
+    .ant-switch-checked {
+      .ant-switch-handle {
+        &::before {
+          background-color: var(--fault);
+        }
+      }
+    }
+  }
+}

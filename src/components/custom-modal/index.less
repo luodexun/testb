@@ -1,0 +1,45 @@
+.ant-modal {
+  top: 35px !important;
+  .ant-modal-content {
+    height: 100%;
+    background-color: transparent !important;
+    padding: 2.5rem 1.25rem;
+    background-image: url(@/assets/dialog/bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    .ant-modal-close {
+      top: 3.125rem;
+      right: 2rem;
+      color: #fff;
+    }
+    .modal_wrap {
+      width: 100%;
+      height: auto;
+      background: linear-gradient(180deg, rgba(14, 33, 100, 0.93) 0%, rgba(15, 34, 97, 0.93) 100%);
+      border-radius: 0.625rem;
+      padding: 0 1.25rem 1.25rem;
+      font-size: 16px;
+      .header {
+        width: 100%;
+        height: 3.75rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title {
+          height: 2.0625rem;
+          padding: 0 1rem;
+          line-height: 2.0625rem;
+          font-size: 1.125rem;
+          background-image: url(@/assets/dialog/header.png);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+        }
+        .close_icon {
+          cursor: pointer;
+          font-size: 1.25rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.ln-screen {
+  width: 5440px;
+  height: 1080px;
+  font-size: 10px;
+  position: relative;
+  background-image: url(/src/assets/liaoning-screen/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  @font-face {
+    font-family: DigitalFont;
+    src: url(@/styles/font/dp-hei.ttf);
+  }
+  .icon-huan {
+    width: 140em;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(/src/assets/liaoning-screen/huan.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .screen-content {
+    height: 100%;
+    padding: 5em 12em;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9;
+    .screen-left, .screen-right {
+      width: 32%;
+      height: 100%;
+      overflow: hidden;
+    }
+   
+    .screen-center {
+      flex: 1;
+      height: 100%;
+      padding: 0 2em;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+}
+.ln-screen-select {
+  font-size: 10px !important;
+  .ant-select-item-option {
+    font-size: 1.6em !important;
+    line-height: 1.3em;
+  }
+  .ant-select-tree {
+    font-size: 1.6em;
+  }
+}

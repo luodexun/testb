@@ -1,0 +1,24 @@
+@import "@/styles/style-funs";
+
+.comprehensive-wrap {
+  position: relative;
+  .ant-card-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.4em;
+    overflow: hidden;
+    .panel-tag-wrap{
+      width: auto;
+    }
+  }
+  .comprehensive-model {
+    padding: 1em;
+    border: 1px solid #4688eb;
+    position: absolute;
+    left: 8em;
+    top: 12em;
+    background: rgb(36, 46, 70);
+    z-index: 2;
+  }
+}

@@ -1,0 +1,39 @@
+.sx-realtime {
+  width: 100%;
+  height: 100%;
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  .sx-realtime-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    .rt-item {
+      display: flex;
+      .icon {
+        width: 3.2em;
+        // height: 2.6em;
+        margin-right: 1em;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      @icon-list: speed, irdt;
+      each(@icon-list, {
+        .i-@{value}  {
+          background-image: ~"url(@/assets/shanxi-screen/@{value}.png)";
+        }
+      })
+      .item-name {
+        font-size: 1.4em;
+        line-height: 1.5em;
+      }
+      .item-val {
+        font-size: 1.8em;
+        line-height: 1em;
+      }
+    }
+  }
+  .sx-realtime-btm {
+    flex: 1;
+  }
+}

@@ -1,0 +1,82 @@
+.hbscreen-new {
+  height: 1080px;
+  width: 4480px;
+  // width: 100%;
+  // height: 100%;
+  padding: 4.8em;
+  font-size: 12px;
+  position: relative;
+  background-image: url(/src/assets/hubei-screen/new/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  .screen-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    .screen-left {
+      width: 28%;
+    }
+    .screen-lr-box {
+      height: 32%;
+      margin-bottom: 2.4em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .screen-lr-20 {
+      height: 20%;
+      margin-bottom: 2.4em;
+    }
+    .screen-lr-30 {
+      height: 30%;
+      margin-bottom: 2.4em;
+    }
+    .screen-lr-50 {
+      height: 44%;
+    }
+    .screen-center {
+      flex: 1;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      .map-btn {
+        position: absolute;
+        top: 2em;
+        left: 10em;
+      }
+    }
+    .screen-right {
+      width: 28%;
+      overflow: hidden;
+    }
+    .screen-box {
+      height: 100%;
+      width: 100%;
+      // margin-bottom: 2.4em;
+      // background-image: url(/src/assets/hubei-screen/box-bg.png);
+      // background-repeat: no-repeat;
+      // background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      .screen-box-content {
+        flex: 1;
+      }
+    }
+    
+  }
+}
+.nhb-screen-select {
+  font-size: 10px !important;
+  .ant-select-item-option {
+    font-size: 1.6em !important;
+    line-height: 1.3em;
+  }
+  .ant-select-tree {
+    font-size: 1.6em;
+  }
+}

@@ -1,0 +1,31 @@
+.matrix-wrap-top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  .matrix-top-type {
+    display: flex;
+    .ov-top-item {
+      width: 8.5em;
+      height: 2.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background-image: url("@/assets/menu/rd_btn_bg.png") !important;
+      /* 背景图垂直、水平均居中 */
+      background-position: center !important;
+      /* 背景图不平铺 */
+      background-repeat: no-repeat !important;
+      /* 让背景图基于容器大小伸缩 */
+      background-size: 100% 100% !important;
+      opacity: 0.6;
+      &.active-i {
+        opacity: 1;
+      }
+    }
+  }
+  .matrix-top-right {
+    display: flex;
+    align-items: center;
+  }
+}

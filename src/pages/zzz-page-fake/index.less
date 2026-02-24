@@ -1,0 +1,36 @@
+@import "@/styles/layout-flex";
+
+.page-fake-wrap {
+  .flex-column(1em, flex-start, flex-start);
+  align-items: stretch;
+  .fake-form-box {
+    .flex-column(1em, flex-start, flex-start);
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: auto;
+    .form-title {
+      font-size: 1.2em;
+      color: #77a3d4;
+    }
+
+    .box-shap {
+      padding: 1em;
+      border: 1px solid #0d3c73;
+      border-radius: 0.5em;
+      box-shadow: 0 0 4px 0 #0f2e59;
+    }
+    .tips {
+      margin-right: 1em;
+      color: var(--success-color);
+      visibility: hidden;
+    }
+    .show {
+      visibility: visible;
+    }
+    .fake-form {
+      .box-shap;
+      width: 20em;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.common-box2 {
+  width: 100%;
+  height: 4.2em;
+  padding: 0.5em;
+  background: rgba(0,210,221,0.1);
+  border: 1px solid;
+  border-image: linear-gradient(270deg, rgba(0, 235, 240, 0.1), rgba(0, 210, 221, 1)) 1 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .box2-left {
+    display: flex;
+    align-items: center;
+    .left-icon {
+      width: 3.2em;
+      height: 3.2em;
+      background: #009AB2;
+      border: 1px solid #00F3FF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .icon {
+        height: 2.2em;
+        width: 2.2em;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        &.icon-wt {
+          background-image: url(/src/assets/liaoning-screen/iwt.png);
+        }
+        &.icon-pv {
+          background-image: url(/src/assets/liaoning-screen/ipv.png);
+        }
+      }
+    }
+    .name {
+      color: rgba(0, 242, 255, 1);
+      font-size: 2em;
+      margin-left: 0.5em;
+    }
+  }
+  .box2-right {
+    .value {
+      font-size: 2.4em;
+      margin-right: 0.4em;
+      color: var(--white-color);
+    }
+    .unit {
+      font-size: 1.6em;
+      color: rgba(0, 231, 255, 0.6);
+    }
+  }
+}

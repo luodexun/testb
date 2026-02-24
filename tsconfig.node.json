@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
+  },
+  "files": ["vite-options.ts", "./src/vite-env.d.ts"],
+  "extends": "@electron-toolkit/tsconfig/tsconfig.node.json",
+  "include": ["electron-vite/node", "vite.config.mts", "electron", "./plugins/*.ts", "mqtt-client"]
+}

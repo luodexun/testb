@@ -1,0 +1,38 @@
+@import "@/styles/layout-flex";
+
+.alarm-analyse-wrap {
+  .flex-column(0em, flex-start, space-between);
+  background: rgba(1, 2, 25, 1);
+  .alarm-analyse-top {
+    height: 3em
+  }
+  .alarm-analyse-content {
+    .d-flex(0em, flex-start, flex-start);
+    flex: 1;
+    width: 100%;
+    height: calc(100% - 3em);
+    border-radius: 0px 0px 0px 0px;
+    border: 1px solid rgba(62,144,238,0.61);
+
+    .al-analyse-content-left {
+      .flex-column(1em, flex-start, flex-start);
+      height: 100%;
+      width: 15%;
+      border-right: 1px solid #265B9F;
+      .ant-select {
+        width: 100%;
+      }
+      .power-tree{
+        height: 100% !important;
+        .ant-tree{
+          height: calc(100% - 2.5em) !important;
+        }
+        gap: 0.5em !important;
+      }
+    }
+    .al-analyse-content-right{
+      height: 100%;
+      width: 85%;
+    }
+  }
+}

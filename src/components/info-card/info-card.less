@@ -1,0 +1,47 @@
+@import "@/styles/layout-flex";
+
+:where(.ant-card).info-card {
+  .flex-column(0, flex-start);
+  width: 100%;
+
+  .ant-card-extra {
+    .d-flex(0.5em, center, flex-end);
+    width: 40%;
+  }
+
+  @head-body-padding: 0.4em;
+  .ant-card-head {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 @head-body-padding;
+    width: 100%;
+    min-height: 1.8em;
+    line-height: 1.8em;
+    font-size: 1.2em;
+    border-bottom: none;
+    &::before,
+    &::after {
+      content: none;
+    }
+    .ant-card-extra {
+      .selector-station {
+        min-width: 14em;
+      }
+      .title-station,
+      .selector-station,
+      .title-date {
+        margin-right: 0.5em;
+      }
+    }
+  }
+  .ant-card-body {
+    padding: @head-body-padding;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+}

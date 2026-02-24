@@ -1,0 +1,114 @@
+@import "@/styles/layout-flex";
+.site-devicemng-wrap {
+  .flex-column(0em, flex-start, space-between);
+  position: relative;
+  .site-devicemng-header {
+    .d-flex(2em, flex-start, flex-start);
+    height: 2.5rem;
+    .btn-group-wrap {
+      .d-flex(0em, flex-start, flex-start);
+      .btn {
+        border: 1px solid rgba(142, 174, 255, 0.4);
+        margin-right: 16px;
+        background: rgba(26, 67, 184, 0.24);
+        // background: rgba(26, 67, 184, 0.69);
+        font-size: 16px;
+      }
+      .btn:hover {
+        background-color: rgba(26, 67, 184, 0.69);
+        color: #e9e3e3;
+      }
+      .btn-selected{
+        background: rgba(26, 67, 184, 0.69);
+      }
+    }
+    .site-name{
+      background: none !important;
+      border: none !important;
+      padding: 0 !important;
+      font-size: 16px !important;
+    }
+  }
+  .site-devicemng-content {
+    height: calc(100% - 2.5rem);
+    width: 100%;
+    border: 1px solid rgba(41, 82, 189);
+    background: linear-gradient(0deg, #101e47, #0e0e36);
+    .ant-table-cell{
+      border-bottom: 1px solid rgba(41, 82, 189, 0.5) !important;
+    }
+    .tower-list {
+      position: relative;
+
+      .f10min {
+        width: 32%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 34.5%;
+        left: 20%;
+      }
+      .tower-item-common--box {
+        width: 100px;
+        text-align: center;
+      }
+      .tower-speed {
+        width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        .tower-list-item {
+          width: 200px;
+          margin-bottom: 60px;
+          display: flex;
+          align-items: center;
+          .tower-list-item--value {
+            width: 90px;
+            height: 30px;
+            margin-left: 10px;
+            border: 1px solid #11c9ee;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 30px;
+          }
+        }
+      }
+      .tower-basic {
+        height: 200px;
+        width: 300px;
+        border: 1px solid #0788a1;
+        border-radius: 20px;
+        position: absolute;
+        top: 20px;
+        right: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .tower-basic-item {
+          height: 40px;
+          display: flex;
+          align-items: center;
+          .tower-basic-item--value {
+            width: 100px;
+            // height: 40px;
+            text-align: right;
+            .item--value--value {
+              color: #11c9ee;
+              font-style: oblique;
+              margin-right: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .site-tower-background {
+    width: 100%;
+    height: 17.5rem;
+    position: absolute;
+    bottom: 0;
+    background-image: url("../../assets/site/pw-bac.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

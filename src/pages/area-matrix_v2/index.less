@@ -1,0 +1,22 @@
+@import "@/styles/layout-flex";
+.area-matrix-wrap {
+  position: relative;
+  .ant-spin-container {
+    height: 100%
+  }
+  .area-matrix {
+    .flex-column(1em, flex-start);
+    // 本页面的滚动条尺寸
+    --scrollbar-height: 4px;
+    --scrollbar-bd-radius: 2px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    // .area-info-box {
+    //   .d-flex(0.2em, center, space-between);
+    //   width: 100%;
+    //   flex-wrap: nowrap;
+    // }
+  }
+}

@@ -1,0 +1,66 @@
+appId: region.control
+productName: region-control
+directories:
+  output: release/${version}
+  buildResources: resources/icons/
+files:
+  - "dist/**/*"
+  - from: resources/icons
+    to: resources/icons
+  - "!**/.vscode/*"
+  - "!src/*"
+  - "!electron.vite.config.{js,ts,mjs,cjs}"
+  - "!vite.config.{js,ts,mjs,cjs}"
+  - "!{.eslintignore,.eslintrc.cjs,.prettierignore,.prettierrc,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}"
+  - "!{.env,.env.*,.env.*.*,.npmrc,pnpm-lock.yaml}"
+  - "!vite-options.ts"
+  - "!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}"
+#extraResources:
+  #- from: resources/icons/
+  #to: resources/icons/
+asarUnpack:
+  - resources/**/*
+win:
+  executableName: region-control
+  icon: resources/icons/icon.png
+  artifactName: ${productName}-Windows-${version}-Setup.${ext}
+nsis:
+  artifactName: ${name}-${version}-setup.${ext}
+  shortcutName: ${productName}
+  uninstallDisplayName: ${productName}
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  installerIcon: resources/icons/icon.ico
+  installerHeaderIcon: resources/icons/icon.ico
+  deleteAppDataOnUninstall: false
+
+mac:
+  target:
+    - "dmg"
+  artifactName: ${productName}-Mac-${version}-Installer.${ext}
+  entitlementsInherit: build/entitlements.mac.plist
+  extendInfo:
+    - NSCameraUsageDescription: Application requests access to the device's camera.
+    - NSMicrophoneUsageDescription: Application requests access to the device's microphone.
+    - NSDocumentsFolderUsageDescription: Application requests access to the user's Documents folder.
+    - NSDownloadsFolderUsageDescription: Application requests access to the user's Downloads folder.
+  notarize: false
+dmg:
+  artifactName: ${name}-${version}.${ext}
+linux:
+  target:
+    - deb
+  maintainer: electronjs.org
+  icon: resources/icons/
+  category: Utility
+  artifactName: ${productName}-Linux-${version}.${ext}
+appImage:
+  artifactName: ${name}-${version}.${ext}
+npmRebuild: false
+# publish:
+#   provider: generic
+#   url: https://example.com/auto-updates
+# electronDownload:
+#   mirror: https://npmmirror.com/mirrors/electron/

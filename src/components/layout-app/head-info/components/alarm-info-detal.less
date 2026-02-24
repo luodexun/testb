@@ -1,0 +1,65 @@
+@import "@/styles/layout-flex";
+.alarm-detail, .alarm-new-detail {
+  padding: 1em;
+  width: 380px;
+  height: auto !important;
+  border-radius: 0.4em;
+  background: linear-gradient(
+    to bottom,
+    rgba(25, 62, 99, 0.4) 0,
+    rgba(6, 9, 46, 0.5) 30%,
+    rgba(6, 9, 46, 0.4) 70%,
+    rgba(10, 55, 90, 0.5) 100%
+  );
+  .alarm-detail-form {
+    margin-bottom: 1rem;
+    .gutter-row {
+      line-height: 1.875rem;
+      font-size: 1rem;
+      padding: .625rem 0;
+      color: #fff
+    }
+  }
+  .alarm-detail--bottom {
+    .d-flex(0.5em, center, flex-end);
+    width: 100%;
+  }
+}
+
+.alarm-new-detail {
+  // position: fixed;
+  position: absolute;
+  top: 3.125rem;
+  right: 3.125rem;
+  z-index: 99999;
+  font-size: .875rem;
+  // background: --var();
+  .alarm-detail-title {
+    height: 1.875rem;
+    width: 100%;
+    border-bottom: 1px solid #b1b1b1;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .two-alarm-title {
+      display: flex;
+      line-height: 1;
+      .title-span {
+        padding: 0.8em 2em;
+        color: var(---white-color);
+        opacity: 0.5;
+        cursor: pointer;
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .ant-row {
+    .ant-col {
+      height: 2.5rem;
+      color: #fff;
+    }
+  }
+}

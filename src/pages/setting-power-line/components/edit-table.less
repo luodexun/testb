@@ -1,0 +1,43 @@
+.editable-table {
+  .ant-spin-container {
+    height: 100%;
+    .ant-table {
+      border: 1px solid #19608d;
+      padding: 0 10px;
+      font-size: 0.9em;
+      .ant-table-thead > tr {
+        height: 70px;
+      }
+      .ant-table-thead > tr > th,
+      .ant-table-thead > tr > td {
+        background-color: var(--table-head-color) !important;
+      }
+      .ant-table-tbody > tr > td {
+        border-top: 1px dashed #19608d !important;
+      }
+      .ant-table-tbody > tr.ant-table-row:hover > td {
+        &,
+        & .ant-table-cell-fix-left,
+        & .ant-table-cell-fix-right {
+          background-color: var(--table-head-color) !important;
+        }
+      }
+    }
+  }
+  .ant-table-row {
+    border-bottom: 1px dashed #1a71a7;
+  }
+  .editable-cell {
+    position: relative;
+  }
+
+  .editable-cell-value-wrap {
+    width: 100%;
+    margin: 7px;
+    padding: 4px;
+    background-color: #1a71a7;
+    border-radius: 5px;
+
+    cursor: pointer;
+  }
+}

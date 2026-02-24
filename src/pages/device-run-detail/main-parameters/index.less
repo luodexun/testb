@@ -1,0 +1,35 @@
+@import "@/styles/icon-font-run/iconfont";
+@import "@/styles/layout-flex";
+
+.main-parameters-wrap {
+  .ant-card-body {
+    &::before {
+      content: unset;
+    }
+    .d-flex(1em, center, space-between);
+
+    .param-col {
+      .flex-column(0.5em, center, space-evenly);
+      width: 100%;
+      height: 100%;
+
+      .param-row {
+        .d-flex(0.5em, center, space-between);
+        width: 90%;
+        i.iconfont {
+          width: 2em;
+          height: 1.8em;
+          line-height: 1.8em;
+          text-align: center;
+          border-radius: 50%;
+          background: radial-gradient(
+            circle at top right,
+            #4d84c2 0,
+            rgba(77, 132, 194, 0.4) 40%,
+            rgba(77, 132, 194, 0.05) 66%
+          );
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import "@/styles/layout-flex";
+.area-agvc {
+  .area-agvc-wrap {
+    .flex-column(1em);
+    background: var(--table-head-color);
+    overflow: hidden;
+  
+    .info-card {
+      flex: 1 0 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+  
+      &:first-child {
+        box-shadow: 0 4px 10px -4px gray;
+      }
+      &:last-child {
+        box-shadow: 0 -4px 10px -4px gray;
+      }
+      .ant-card-body {
+        flex: 1;
+        padding: 0;
+        overflow: hidden;
+      }
+    }
+  }
+  .area-agvc-tabs {
+    display: flex;
+    flex-direction: column;
+    background: var(--table-head-color);
+    overflow: hidden;
+    
+  }
+  .span-value {
+    width: 100%;
+    color: var(--white-color);
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+  }
+  .status-switch {
+    .com {
+      font-size: 1.3em;
+      margin-left: .5em;
+    }
+    .com-act {
+      color: red;
+    }
+    .com-unact {
+      color: green;
+    }
+    .ant-switch {
+      background: RGBA(63, 69, 88, 1);
+      .ant-switch-handle {
+        &::before {
+          background-color: var(--success-color);
+        }
+      }
+    }
+    .ant-switch-checked {
+      .ant-switch-handle {
+        &::before {
+          background-color: var(--fault);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.screen-box.day-load {
+  height: 100%;
+  width: 100%;
+  background-image: url(/src/assets/hubei-screen/box-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  .station-select {
+    width: 14em;
+    height: 2em;
+    margin-right: 2em;
+    z-index: 2;
+    float: right;
+    .ant-select {
+      .ant-select-selector {
+        // border: none !important;
+        // background: RGBA(5, 44, 79, 1);
+        .ant-select-selection-item {
+          line-height: 1.3em;
+        }
+      }
+      .ant-select-selector {
+        font-size: 14px;
+      }
+    }
+  }
+  .day-chart {
+    flex: 1;
+  }
+}

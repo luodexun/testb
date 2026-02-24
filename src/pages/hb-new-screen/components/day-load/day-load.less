@@ -1,0 +1,28 @@
+.hbscreen-new .day-load {
+  height: 100%;
+  width: 100%;
+  // background-image: url(/src/assets/hubei-screen/box-bg.png);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  .day-chart {
+    flex: 1;
+  }
+  .station-select {
+    width: 14em;
+    margin-right: 4em;
+    z-index: 2;
+    float: right;
+    .ant-select {
+      .ant-select-selector {
+        border: none !important;
+        background: RGBA(5, 44, 79, 1);
+      }
+      .ant-select-selector {
+        font-size: 16px;
+      }
+    }
+  }
+}

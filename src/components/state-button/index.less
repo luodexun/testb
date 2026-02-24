@@ -1,0 +1,35 @@
+@import "@/styles/layout-flex";
+
+.state-button {
+  .d-flex(0.4em, baseline, space-around);
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+  border: 1px solid;
+  border-radius: 0.2em;
+  text-align: center;
+  overflow: hidden;
+
+  .state-btn-name,
+  .state-btn-count {
+    padding: 0.1em 0.2em;
+    min-width: 2em;
+    color: var(--white-color);
+  }
+  .state-btn-name {
+    filter: invert(100%);
+  }
+  .state-btn-count {
+    background-color: var(--table-head-color);
+  }
+
+  &.checked {
+    .state-btn-name {
+      background-color: var(--table-head-color);
+      filter: invert(0);
+    }
+    .state-btn-count {
+      filter: invert(100%);
+      background-color: transparent;
+    }
+  }
+}

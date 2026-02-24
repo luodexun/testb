@@ -1,0 +1,14 @@
+{
+  "main": {
+    "name":"主接线图",
+    "type": "electrical"
+  },
+  "menu": {
+    "name": "菜单",
+    "type": "menu"
+  },
+  "zb1": {
+    "name": "主变1",
+    "type": "electrical"
+  }
+}

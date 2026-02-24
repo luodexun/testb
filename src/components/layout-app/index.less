@@ -1,0 +1,21 @@
+@import "@/styles/layout-flex";
+.app-layout {
+  position: relative;
+  // gap: 0.8em;
+  height: 100%;
+
+  header.ant-layout-header {
+    .d-flex(0, center, flex-end);
+
+    padding-inline: 1em !important;
+    height: var(--head-height);
+    line-height: var(--head-height);
+    box-sizing: border-box;
+    box-shadow: 4px 4px 40px 0 rgb(0 0 0 / 5%);
+    background-image: url("@/assets/header/head_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+  }
+}

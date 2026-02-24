@@ -1,0 +1,160 @@
+@import "@/styles/layout-flex";
+
+.site-boost-wrap {
+  position: relative;
+  .flex-column(0,flex-start, flex-start);
+  overflow: hidden;
+  .ant-spin {
+    position: absolute;
+    inset: 0;
+    .d-flex(1em, center, center);
+  }
+  .site-boost-top {
+    display: flex;
+    align-items: center;
+    .ant-btn {
+      margin-left: 1em;
+    }
+    .site-info-box {
+      margin-left: 2em;
+      .card-title,
+      .img-name {
+        width: unset;
+      }
+      .card-title {
+        font-size: 1.2em;
+        cursor: pointer;
+      }
+      .img-name {
+        font-weight: 600;
+      }
+    }
+  }
+  
+  .container-wrap {
+    position: relative;
+    overflow: hidden;
+    .container {
+      position: absolute;
+      inset: 0;
+      cursor: move;
+      overflow: hidden;
+      svg {
+        width: 100%;
+        height: 100%;
+
+        .dom-feedback {
+          @point-list: ON, OFF, CB, UP, DOWN, STOP, CLK, TP, ARM, YT, LINE;
+          @opacity-list: UP, DOWN, STOP, CLK;
+          each(@point-list, {
+            *[id^="@{value}:"]  {
+              cursor: pointer;
+            }
+          });
+          each(@opacity-list, {
+            *[id^="@{value}:"]:hover  {
+              fill-opacity: 0.7 !important;
+              stroke-opacity: 0.7 !important;
+            }
+          });
+        }
+        .dom-feedback;
+
+        .switch-state {
+          @on-off-list: on, off;
+          each(@on-off-list, {
+            @is-on: boolean(@value=on);
+            .switch-@{value} {
+              visibility: if(@is-on, visible, hidden) !important;
+            }
+            .cb-@{value}.cb-@{value} {
+              @the-color1: if(@is-on, #FF0000FF, #09fc08);
+              @the-color2: if(@is-on, #FF0000FF, #101e47);
+              stroke: @the-color1 !important;
+              fill: @the-color2 !important;
+              & path {
+                fill: none !important;
+                stroke: inherit !important;
+              }
+            }
+            .arm-@{value}.arm-@{value} {
+              @the-color: if(@is-on, #FF0000FF, #09fc08);
+              stroke: @the-color !important;
+              fill: @the-color !important;
+              & path {
+                fill: none !important;
+                stroke: inherit !important;
+              }
+            }
+          });
+          
+        }
+        .switch-state;
+        .switch-grey {
+          .cb-grey, .arm-grey {
+            stroke: #cccccc !important;
+            fill: #101e47 !important;
+            & path {
+              fill: none !important;
+              stroke: inherit !important;
+            }
+          }
+        }
+        .switch-grey;
+        .flash-light {
+          animation: svgflash 1s infinite;
+        }
+        @keyframes svgflash {
+          25%, 65% {
+            fill-opacity: .5;
+            stroke-opacity: .5;
+          }
+          0%, 50%, 100% {
+            fill-opacity: 1;
+            stroke-opacity: 1;
+          }
+          
+        }
+      }
+      
+      .err-info {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2em;
+        color: var(--graycolor);
+      }
+      .bsign-list {
+        display: flex;
+        .bsign-icon {
+          width: 2.6em;
+          height: 2em;
+          padding-top: 0.4em;
+          font-size: 0.8em;
+          background-image: url(/src/assets/device/sign.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #000000;
+        }
+      }
+    }
+  }
+  .cxt-menu {
+    display: none;
+    position: absolute;
+  }
+  .five-rule-modal {
+    width: 60em;
+    display: none;
+    position: absolute;
+  }
+}
+.ant-select-disabled {
+  .ant-select-selection-item {
+    color: var(--white-color);
+  }
+}

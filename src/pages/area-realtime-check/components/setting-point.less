@@ -1,0 +1,43 @@
+.dvs-point-page {
+  width: 100%;
+  height: 70vh;
+  .dvs-point-page-content {
+    height: 90%;
+    overflow: auto;
+    display: flex;
+    border: 1px solid var(--border-color);
+    .dvs-station-list {
+      .station-item {
+        opacity: 0.7;
+        .station-name {
+          width: 12em;
+          text-align: center;
+          padding: 0.5em 1em;
+          border-right: 1px solid var(--border-color);
+          border-bottom: 1px solid var(--border-color);
+          cursor: pointer;
+        }
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+    .dvs-content-dvs {
+      padding: 0.5em 1em;
+      border: 1px solid var(--border-color);
+    }
+    .dvs-content-point {
+      height: 100%;
+      flex: 1;
+      padding: 1em;
+      border: 1px solid var(--border-color);
+      .point-item {
+        width: 30em;
+        margin-bottom: 0.7em;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  
+}

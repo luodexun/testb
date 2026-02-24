@@ -1,0 +1,35 @@
+.card-info-wrap {
+  display: grid;
+  width: 100%;
+  height: 11.25rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: .875rem;
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0C1D4D;
+    border-radius: .1875rem;
+    padding: 1.5rem;
+    .img, .info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 50%;
+      height: 100%;
+    }
+    .info {
+     border-left: 1px dashed #539FFF;
+     .title {
+      font-size: 1.125rem;
+      font-weight: bold;
+     }
+     .value {
+      font-size: 1.5625rem;
+      font-weight: bold;
+      color: #2AF5FA;
+     }
+    }
+  }
+}

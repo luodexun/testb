@@ -1,0 +1,39 @@
+@import "@/styles/layout-flex";
+
+.device-type-info-panel {
+  .d-flex(2em, center, flex-start);
+  white-space: nowrap;
+  width: 100%;
+  height: 2.4em;
+
+  .device-type-info-box {
+    .d-flex(2em, center, space-between);
+    height: 100%;
+    .metric-tag {
+      position: relative;
+      gap: 0.5em;
+      height: 100%;
+      width: max-content;
+      color: var(--label-color);
+      &:not(:last-child) {
+        overflow: unset;
+        &::after {
+          content: "";
+          position: absolute;
+          right: -1em;
+          display: block;
+          height: 1.6em;
+          border-right: 2px solid var(--split-color);
+        }
+      }
+    }
+    .info-value {
+      min-width: 4em;
+      height: 2em;
+      font-size: 1.2em;
+    }
+    .info-unit {
+      width: max-content;
+    }
+  }
+}

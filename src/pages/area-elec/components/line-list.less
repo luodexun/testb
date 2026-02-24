@@ -1,0 +1,85 @@
+.line-list{
+  height: 100%;
+  width: 100%;
+  // overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  // font-size: 10px;
+  .line-list-item {
+    padding: 0.05em .2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .tooltip-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .tooltip-name {
+      color: var(--white-color);
+      position: absolute;
+      // top: -1.5em;
+      z-index: 10;
+      display: block;
+      background-color: #4c4949;
+      white-space: nowrap;
+    }
+    .line-item-name {
+      font-size: .6em;
+    }
+    .wai-icon {
+      width: 1em;
+      height: 1em;
+      //江苏个性化
+      // width: 1.2em; 
+      // height: 1.2em;
+      border-radius: 50%;
+      background-color: #1fe005;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.offline {
+        background-color: #ff0000;
+      }
+      &.grey {
+        background-color: #c5c4c4 !important;
+      }
+      &.noBackground {
+        background-color: transparent;
+      }
+    }
+    @keyframes flashing {
+      0%, 50%, 100% {
+          opacity: 1;
+      }
+      25%, 75% {
+          // opacity: 0;
+          background-color: #ffffff;
+      }
+    }
+    .icon {
+      width: 0.55em;
+      height: 0.55em;
+      // 江苏个性化
+      // width: 0.7em;
+      // height: 0.7em;
+      // display: block;
+      border-radius: 50%;
+      // background-color: #2fb41e;
+      background-color: #1fe005;
+      &.offline {
+        background-color: #ff0000;
+        // background-color: #812e2e;
+      }
+      &.shang {
+        animation: flashing 1s infinite;
+      }
+      &.grey {
+        background-color: #c5c4c4 !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.area-state-list {
+  width: 100%;
+  .state-item {
+    margin: .7em 0;
+    border-radius: .3em;
+    border-width: 1px;
+    border-style: solid;
+    
+    .state-item-title {
+      height: 2.2em;
+      line-height: 2.2em;
+      text-align: center;
+      font-size: 1.4em;
+      cursor: pointer;
+    }
+    .state-item-children {
+      padding: 0 .7rem;
+      display: flex;
+      flex-wrap: wrap;
+      .item-children {
+        position: relative;
+        width: 49%;
+      }
+      .item-children-item {
+        width: 100%;
+        height: 2.6em;
+        margin: .4em 0;
+        
+        overflow: hidden;
+        // display: inline-block;
+        line-height: 2.6em;
+        border-radius: 13px;
+        .state-icon {
+          height: 1.2em;
+          width: 1.2em;
+          margin-right: 0.32em;
+          color: #0A0D27;
+          border-radius: 50%;
+          line-height: 1.2em;
+          display: inline-block;
+          text-align: center;
+          font-size: 1.4em;
+        }
+        .state-name {
+          cursor: pointer;
+          font-size: 1.4em;
+        }
+      }   
+    }
+  }
+}

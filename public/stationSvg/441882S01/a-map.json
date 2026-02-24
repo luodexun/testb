@@ -1,0 +1,20 @@
+{
+  "main": {
+    "name": "主接线图",
+    "type": "electrical"
+  },
+  "mx1": {
+    "name": "",
+    "type": ""
+  },
+  "zb1": {
+    "name": "",
+    "type": "",
+    "display": {
+      "svg": false,
+      "gzp": {
+        "key": "label"
+      }
+    }
+  }
+}

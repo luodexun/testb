@@ -1,0 +1,19 @@
+@import "./variables";
+
+::-webkit-scrollbar {
+  overflow: auto;
+  width: var(--scrollbar-width, @scrollbar-width);
+  height: var(--scrollbar-height, @scrollbar-height);
+  border-radius: var(--scrollbar-bd-radius, @scrollbar-border-radius);
+}
+::-webkit-scrollbar-thumb {
+  overflow: auto;
+  width: var(--scrollbar-width, @scrollbar-width);
+  height: var(--scrollbar-height, @scrollbar-height);
+  background: @scrollbar-background-color;
+  border-radius: var(--scrollbar-bd-radius, @scrollbar-border-radius);
+}
+::selection {
+  color: var(--white-color);
+  background: var(--primary-color);
+}

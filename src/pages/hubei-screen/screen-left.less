@@ -1,0 +1,89 @@
+.hb2-tr, .hb2-tl, .hb2-tc {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 1em;
+  font-size: 10px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  .hb2-tr-hd, .hb2-tl-hd, .hb2-tc-hd {
+    height: 11em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .hb2-tr-ct, .hb2-tl-ct,  .hb2-tc-ct {
+    width: 100%;
+    height: calc(100% - 11em);
+  }
+  .screen-box {
+    height: 100%;
+    width: 100%;
+    // margin-bottom: 2.4em;
+    padding-bottom: 1em;
+    background-image: url(/src/assets/hubei-screen/box-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .screen-box-content {
+      flex: 1;
+      padding: 0 1em;
+      font-size: 10px;
+      overflow: auto;
+      // font-size: 22px;
+    }
+  }
+  .screenList {
+    position: absolute;
+    top: 5em;
+    left: 20em;
+    z-index: 3;
+  }
+}
+.hb2-tr {
+  background-image: url(/src/assets/hubei-screen/bg2-right.png);
+  .hb2-tr-hd {
+    background-image: url(/src/assets/hubei-screen/hd-r.png);
+  }
+  .hb2-tr-ct {
+    padding: 0 3em;
+  }
+}
+.hb2-tl {
+  background-image: url(/src/assets/hubei-screen/bg2-left.png);
+  .hb2-tl-hd {
+    background-image: url(/src/assets/hubei-screen/hd-l.png);
+  }
+  .hb2-tl-ct {
+    padding: 0 3em;
+  }
+}
+.hb2-tc {
+  background-image: url(/src/assets/hubei-screen/bg2-center.png);
+  .hb2-tc-hd {
+    background-image: url(/src/assets/hubei-screen/hd-c.png);
+    position: relative;
+    .hd-span {
+      position: absolute;
+      font-size: 3em;
+      letter-spacing: 0.4em;
+      font-weight: bold;
+      line-height: 2.8;
+      right: 25%;
+    }
+  }
+  .hb2-tc-ct {
+    padding: 0 3em;
+  }
+}
+.hb2-screen-select {
+  font-size: 10px !important;
+  .ant-select-item-option {
+    font-size: 1.6em !important;
+    line-height: 1.3em;
+  }
+  .ant-select-tree {
+    font-size: 1.6em;
+  }
+}

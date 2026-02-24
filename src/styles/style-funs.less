@@ -1,0 +1,15 @@
+.index (@name, @cs:1, @ce:1, @rs:1, @re:1) {
+  .@{name} {
+    display: flex;
+    grid-column-start: @cs;
+    grid-column-end: @ce;
+    grid-row-start: @rs;
+    grid-row-end: @re;
+  }
+}
+
+.full-img-bg(@url) {
+  background-image: url(@url);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,32 @@
+.attr-trend {
+  // width: 100%;
+  // height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  .attr-trend-mx {
+    position: absolute;
+    top: 4em;
+    right: 2em;
+  }
+  .attr-trend-ymx {
+    z-index: 3;
+    position: absolute;
+    top: 4em;
+    left: 40em;
+    cursor: pointer;
+    background-color: var(--bg-active);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    .ymx-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.3em;
+      gap: 0.5em;
+    }
+  }
+}

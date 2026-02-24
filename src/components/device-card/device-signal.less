@@ -1,0 +1,24 @@
+@import "@/styles/layout-flex";
+@import "@/styles/style-funs";
+
+.device-signal-wrap {
+  .d-flex(0.2em, center, flex-end);
+  .signal-icon-box {
+    .d-flex(0.5em, center, flex-end);
+  }
+}
+.signal-icon {
+  display: block;
+  width: 1.8em;
+  height: 1.4em;
+  font-style: normal;
+  each(range(8), {
+    &.signal-0@{value} {
+      .full-img-bg("@/assets/device/signal_0@{value}.png");
+    }
+  });
+  
+}
+.signal-common {
+  .full-img-bg("@/assets/device/signal.png");
+}

@@ -1,0 +1,16 @@
+.energy-management.info-card {
+  & .ant-card-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    row-gap: 1em;
+    padding: 1em 1.4em;
+    &::before {
+      content: none;
+    }
+    .chart-wrap {
+      border-radius: 0.4em;
+      background: linear-gradient(0deg, #0a0c33, #091e46 60%);
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.ln-company {
+  width: 65%;
+  height: 100%;
+  overflow: auto;
+  .company-item {
+    height: 3.8em;
+    margin-bottom: 0.2em;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 210, 221, 0.10);
+    .item-left {
+      background-color: rgba(0, 210, 221, 0.20);
+      color: var(--white-color);
+      padding-left: 0 !important;
+      .item-left-left {
+        .line {
+          display: inline-block;
+          width: 0.2em;
+          height: 1.4em;
+          margin-right: 1em;
+        }
+        .company-name {
+          font-size: 2em;
+        }
+      }
+      .rate {
+        width: 3.4em;
+        height: 1.5em;
+        font-size: 1.6em;
+        border-radius: 0.1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+      
+    }
+    .item-com {
+      width: 33%;
+      padding: 0 0.7em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      .name {
+        color: rgba(0, 242, 255, 1);
+        font-size: 1.6em;
+        margin-left: 0.2em;
+      }
+      .box-right {
+        .value {
+          font-size: 1.6em;
+          margin-right: 0.4em;
+          color: var(--white-color);
+        }
+        .unit {
+          font-size: 1.2em;
+          color: rgba(0, 231, 255, 0.6);
+        }
+      }
+      &:last-child::before {
+        content: "";
+        height: 2em;
+        width: 0.1em;
+        background-color: rgba(0, 129, 155, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+/* 设置滚动条滑块的样式 */
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 210, 221, 0.20); /* 滑块的背景颜色 */
+    border-radius: 10px; /* 滑块的圆角 */
+  }
+}

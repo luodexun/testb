@@ -1,0 +1,55 @@
+.hbscreen-one {
+  height: 1080px;
+  width: 4480px;
+  // width: 100%;
+  // height: 100%;
+  padding: 0 4em 0 7em;
+  font-size: 10px;
+  background-image: url(/src/assets/hubei-screen/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  // overflow: auto;
+  .screen-content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    .screen-left {
+      width: 126em;
+    }
+    .screen-lr-box {
+      height: 30em;
+      margin-bottom: 2.4em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .screen-center {
+      flex: 1;
+      position: relative;
+      .map-btn {
+        position: absolute;
+        top: 2em;
+        left: 10em;
+      }
+    }
+    .screen-right {
+      width: 126em;
+    }
+    .screen-box {
+      height: 100%;
+      width: 100%;
+      // margin-bottom: 2.4em;
+      background-image: url(/src/assets/hubei-screen/box-bg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      overflow: hidden;
+    }
+    
+  }
+}

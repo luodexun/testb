@@ -1,0 +1,22 @@
+@import "@/styles/layout-flex";
+
+.custom-psd-wrap {
+  position: relative;
+  overflow: hidden;
+  .hack-input {
+    position: absolute;
+    padding: 0;
+    width: 0;
+    height: 0;
+    z-index: -2;
+  }
+  .main-input {
+    height: 2.4em;
+    .anticon.ant-input-password-icon {
+      color: #0b468d;
+      &:hover {
+        color: #1857a1;
+      }
+    }
+  }
+}

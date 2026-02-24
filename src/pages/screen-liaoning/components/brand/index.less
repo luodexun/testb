@@ -1,0 +1,60 @@
+.ln-brand {
+  height: 100%;
+  padding: 1em;
+  display: flex;
+  .ln-brand-item {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    .chart-wrap {
+      flex: 1;
+    }
+    .ln-item-type {
+      position: absolute;
+      left: 1em;
+      font-size: 2.2em;
+      display: flex;
+      align-items: center;
+      &::before{
+        content: "";
+        display: inline-block;
+        width: 0.2em;
+        height: 1em;
+        margin-right: 0.4em;
+        background-color: rgba(0, 143, 255, 1);
+      }
+    }
+  }
+  .brand-tbox {
+    font-size: 7px;
+    z-index: 22;
+    width: 16.1em;
+    border: 1px solid rgba(16, 149, 255, 0.69);
+    color: #FFFFFF;
+    .brand-tbox-title {
+      // height: 2em;
+      background: rgba(16, 149, 255, 1);
+      text-align: center;
+      font-size: 1.8em;
+      line-height: 2em;
+    }
+    .brand-tbox-cnt {
+      padding: 0 2em 2em;
+      background: rgba(7,47,111,0.43);
+      .brand-cnt-item {
+        display: flex;
+        flex-direction: column;
+        .cnt-item-value {
+          font-size: 1.8em;
+          line-height: 2em;
+          color: rgba(48, 225, 255, 1);
+        }
+        .cnt-item-name {
+          font-size: 1.4em;
+          line-height: 1.3em;
+        }
+      }
+    }
+  }
+}

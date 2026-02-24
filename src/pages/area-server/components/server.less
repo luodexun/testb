@@ -1,0 +1,76 @@
+    .server-module {
+        min-width: 180px;
+        padding: 0 10px 10px;
+        margin: 10px;
+        text-align: center;
+        border-radius: 4px;
+        cursor: pointer;
+        background: linear-gradient(180deg, #3264CA, transparent);
+        .server-title {
+            text-align: center;
+            color: rgba(255,255,255,0.6);
+        }
+        .top-line {
+            width: 20px;
+            height: 2px;
+            margin: 0 auto 10px;
+        }
+        .server-content {
+            .server-item {
+                text-align: center;
+                margin-bottom: 4px;
+                border-radius: 4px;
+            }
+        }
+        &:hover {
+            background: linear-gradient(180deg, #3068FB, transparent);
+        }
+        &.warn-state:hover {
+            filter: saturate(2);
+        }
+    }
+    
+    .servers-module {
+        margin: 5px;
+        border-radius: 4px;
+        background-color: #031d4c;
+        .servers-block {
+            display: flex;
+            .server-module {
+                min-width: 180px;
+                padding: 0 10px 10px;
+                margin: 10px;
+                text-align: center;
+                border-radius: 4px;
+                cursor: pointer;
+                background: linear-gradient(180deg, #3264CA80, transparent);
+                .server-title {
+                    text-align: center;
+                    color: rgba(255,255,255,0.6);
+                }
+                .top-line {
+                    width: 20px;
+                    height: 2px;
+                    margin: 0 auto 10px;
+                }
+                .server-content {
+                    .server-item {
+                        text-align: center;
+                        margin-bottom: 4px;
+                        border-radius: 4px;
+                    }
+                }
+                &:hover {
+                    background: linear-gradient(180deg, #3068FB, transparent);
+                }
+                &.warn-state:hover {
+                    filter: saturate(2);
+                }
+            }
+        }
+        .server-station {
+            padding: 10px 0 0 20px;
+        }
+    }
+
+

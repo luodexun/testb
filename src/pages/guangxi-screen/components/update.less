@@ -1,0 +1,89 @@
+.screen-modal {
+  // height: 100%;
+  overflow: hidden;
+  font-size: 10px;
+  height: 180em;
+}
+.screen-btn {
+  text-align: right;
+}
+.screen-setting {
+  height: 94%;
+  display: flex;
+  justify-content: space-around;
+  .setting-quota {
+    width: 33%;
+  }
+  .ant-btn {
+    height: 2em;
+  }
+}
+.sq-form {
+  height: 95%;
+  overflow: auto;
+  .sq-form-title {
+    display: flex;
+    margin-bottom: 1em;
+    span {
+      width: 20%;
+    }
+  }
+  .reset-item {
+    display: flex;
+    margin-bottom: 0.2em;
+    .ant-select {
+      @icon-list: 1, 2, 3, 4, 5;
+        each(@icon-list, {
+          .i-@{value}  {
+            background-image: ~"url(@/assets/large-screen/icon_@{value}.png)";
+          }
+        });
+      i {
+        display: inline-block;
+        height: 1.6em;
+        width: 1.9em;
+        // background-image: url(/src/assets/large-screen/icon1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  
+  .ant-btn-dashed {
+    color: #164ec5;
+  }
+}
+.setting-site {
+  .s-site {
+    height: 95%;
+    overflow: auto;
+    .ss-form {
+      .ss-form-title, .ss-tooltip-title {
+        display: flex;
+        margin-bottom: 1em;
+        span {
+          width: 22%;
+        }
+      }
+      .ss-tooltip-title {
+        span {
+          width: 30%;
+        }
+      }
+      .reset-item {
+        display: flex;
+        margin-bottom: 0.3em;
+        .ss-form-tooltip {
+          width: 22%;
+          .ss-tooltip-item {
+            display: flex;
+          }
+        }
+      }
+      
+      .ant-btn-dashed {
+        color: #164ec5;
+      }
+    }
+  }
+}

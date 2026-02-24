@@ -1,0 +1,59 @@
+.hbscreen-two .hb-map-btm-quota{
+  display: flex;
+  justify-content: space-around;
+  .btm-quota-item {
+    width: 30%;
+    .btm-item-top {
+      width: max-content;
+      margin-bottom: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @icon-list: PVINV, WT, ESPCS;
+      each(@icon-list, {
+        .type-@{value}  {
+          background-image: ~"url(@/assets/hubei-screen/@{value}.png)";
+        }
+      });
+      i {
+        height: 8.1em;
+        width: 7em;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+      }
+      .name {
+        font-size: 2em;
+      }
+    }
+    .tlist-box {
+      display: flex;
+      flex-wrap: wrap;
+      
+      .tlist-box-item {
+        display: flex;
+        margin: 0 0 1em 1em;
+        .tlist-item-icon {
+          width: 1.4em;
+          height: 1.4em;
+          margin-top: 1.3em;
+          margin-right: 1em;
+          border-radius: 50%;
+          background: linear-gradient( 180deg, #BBD9FF 0%, #005DD4 100%);
+        }
+        .tlist-item-value {
+          display: block;
+          color: rgba(132, 195, 255, 1);
+          line-height: 1.5em;
+          font-size: 3em;
+          font-weight: 600;
+          
+        }
+        .tlist-item-name {
+          font-size: 1.8em;
+          line-height: 1em;
+        }
+      }
+    }
+  }
+}

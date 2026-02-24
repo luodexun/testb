@@ -1,0 +1,94 @@
+@import "@/styles/layout-flex";
+.tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  height: 3rem;
+  border-bottom: 1px solid #265B9F;
+  .tab-list {
+    padding-left: 20px;
+    .item {
+      display: inline-block;
+      width: 3.75rem;
+      height: 1.875rem;
+      text-align: center;
+      line-height: 1.875rem;
+      border-radius: .3125rem;
+      background: var(--bg-linear);
+      margin-right: .625rem;
+      cursor: pointer;
+      &.active {
+        background: var(--bg-linear-active);
+      }
+    }
+  }
+  .download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.75rem;
+    height: 2.5rem;
+    background: var(--bg-linear);
+    border-radius: .3125rem;
+    cursor: pointer;
+    &:hover {
+      background: var(--bg-linear-active);
+    }
+  }
+
+}
+.content {
+  width: 100%;
+  height: calc(100% - 3em);
+  overflow: hidden;
+  .curve-warp {
+    width: 100%;
+    height: 100%;
+    .chart-wrap {
+      width: 100%;
+      height: 100%;
+    }
+    .echart-content-top{
+      height: 35%;
+    }
+    .echart-content-bottom{
+      height: 65%;
+      .echart-content-title{
+        width: 100%;
+        height: 2.5em;
+        padding-left: 1em;
+        line-height: 2.5em;
+        border-top: 1px solid #265B9F;
+        background: linear-gradient( 90deg, #1A43B8 0%, rgba(29,71,189,0.89) 1%, rgba(34,78,198,0.26) 14%, rgba(48,97,224,0.03) 48%, rgba(50,100,228,0) 100%);
+      }
+      .echart-content-detail {
+        .flex-column(0em, flex-start, flex-start);
+        gap: 1em;
+        height: calc(100% - 2.5em);
+        .detail-content-top {
+          width: 100%;
+          height: 50%;
+        }
+        .detail-content-bottom {
+          .d-flex(1em, flex-start, flex-start);
+          width: 100%;
+          height: 50%;
+          gap: 1em;
+          .bottom-echart{
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .ant-table {
+    height: calc(100% - 4rem);
+  }
+  .ant-table-container {
+    height: 100%;
+    overflow: hidden;
+   
+  }
+}

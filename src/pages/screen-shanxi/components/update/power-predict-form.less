@@ -1,0 +1,37 @@
+.sx-sq-form {
+  // height: 100%;
+  overflow: auto;
+  .sq-form-title {
+    display: flex;
+    margin-bottom: 1em;
+    span {
+      width: 30%;
+    }
+  }
+  .reset-item {
+    display: flex;
+    margin-bottom: 0.2em;
+    .ant-select {
+      @icon-list: 1, 2, 3, 4, 5;
+        each(@icon-list, {
+          .i-@{value}  {
+            background-image: ~"url(@/assets/large-screen/icon_@{value}.png)";
+          }
+        });
+      i {
+        display: inline-block;
+        height: 1.6em;
+        width: 1.9em;
+        // background-image: url(/src/assets/large-screen/icon1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  
+  .ant-btn-dashed {
+    width: 30%;
+    display: block;
+    color: #164ec5;
+  }
+}

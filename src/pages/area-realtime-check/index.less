@@ -1,0 +1,37 @@
+.area-jsrltm {
+  // font-size: 10px;
+  overflow: auto;
+  height: 100%;
+  .station-list-item {
+    width: 100%;
+    border: 1px solid #4D91E4;
+    border-bottom: none;
+    display: flex;
+    .wrap-link {
+      color: var(--white-color);
+    }
+    .station-item-left {
+      width: 6.8em;
+      padding: .4em .7em 0 .7rem;
+      font-size: 1em;
+      background: linear-gradient(180deg, #1A42B4 0%, rgba(26,66,180,0) 100%);
+    }
+    .station-item-right {
+      padding: 0.5em 1em;
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      .dvs-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .point-item {
+        width: 17em;
+      }
+    }
+    &:last-child {
+      border-bottom: 1px solid #4D91E4;
+    }
+  }
+}

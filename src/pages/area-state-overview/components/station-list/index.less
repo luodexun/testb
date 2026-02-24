@@ -1,0 +1,28 @@
+.station-list {
+  width: 100%;
+  padding-left: 1em;
+  margin-top: 0.7em;
+  position: relative;
+  
+  .station-list-item {
+    width: 100%;
+    border: 1px solid #4D91E4;
+    border-bottom: none;
+    display: flex;
+    .device-matrix-wrap-link {
+      color: var(--white-color);
+    }
+    .station-item-left {
+      width: 6.8em;
+      padding: .4em .7em 0 .7rem;
+      font-size: 1.4em;
+      background: linear-gradient(180deg, #1A42B4 0%, rgba(26,66,180,0) 100%);
+    }
+    .station-item-right {
+      flex: 1;
+    }
+    &:last-child {
+      border-bottom: 1px solid #4D91E4;
+    }
+  }
+}

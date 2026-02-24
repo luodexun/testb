@@ -1,0 +1,97 @@
+.site-tower-wrap {
+  position: relative;
+  .site-tower-header {
+    height: 2.5rem;
+    // width: 100%;
+    position: absolute;
+    top: 1.3125rem;
+    right: .625rem;
+    // display: flex;
+    // flex-direction: row-reverse;
+  }
+  .site-tower-content {
+    // background-image: url('../../assets/site/power.png');
+    // background-size: 100% 100%;
+    // background-repeat: no-repeat;
+    height: 100%;
+    padding: 2rem;
+    background: linear-gradient(0deg, #101e47, #0e0e36);
+    .tower-list {
+      position: relative;
+      // width: 500px;
+      
+      .f10min {
+        width: 32%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 34.5%;
+        left: 20%;
+      }
+      .tower-item-common--box {
+        width: 100px;
+        text-align: center;
+      }
+      .tower-speed {
+        width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        .tower-list-item {
+          width: 200px;
+          margin-bottom: 60px;
+          display: flex;
+          align-items: center;
+          .tower-list-item--value {
+            width: 90px;
+            height: 30px;
+            margin-left: 10px;
+            border: 1px solid #11c9ee;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 30px;
+          }
+        }
+      }
+      .tower-basic {
+        height: 200px;
+        width: 300px;
+        border: 1px solid #0788a1;
+        border-radius: 20px;
+        position: absolute;
+        top: 20px;
+        right: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .tower-basic-item {
+          height: 40px;
+          display: flex;
+          align-items: center;
+          .tower-basic-item--value {
+            width: 100px;
+            // height: 40px;
+            text-align: right;
+            .item--value--value {
+              color: #11c9ee;
+              font-style: oblique;
+              margin-right: 6px;
+            }
+          }
+        }
+        
+      }
+      
+    }
+  }
+  .site-tower-background {
+    width: 100%;
+    height: 17.5rem;
+    position: absolute;
+    bottom: 0;
+    background-image: url("../../assets/site/pw-bac.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+

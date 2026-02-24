@@ -1,0 +1,59 @@
+.station-statistics {
+  width: 50%;
+  border-radius: 0.4em;
+  border: 1px solid rgba(0, 153, 178, 1);
+  display: flex;
+  .cm-box-one1 {
+    border: none !important;
+  }
+  .stc-right {
+    padding: 0 2em;
+    flex: 1;
+    border-left: 1px solid rgba(0, 153, 178, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .stc-right-s {
+      width: 55%;
+      .stc-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        .box-left {
+          .icon {
+            display: inline-block;
+            height: 1.5em;
+            width: 0.4em;
+          }
+          .name {
+            color: rgba(0, 242, 255, 1);
+            font-size: 2em;
+            margin-left: 0.5em;
+          }
+        }
+        .box-right {
+          .value {
+            font-size: 2.4em;
+            margin-right: 0.4em;
+            color: var(--white-color);
+          }
+          .unit {
+            font-size: 1.6em;
+            color: rgba(0, 231, 255, 0.6);
+          }
+        }
+        &:last-child::before {
+          content: "";
+          height: 0.1em;
+          width: 13em;
+          background-color: rgba(0, 129, 155, 1);
+          position: absolute;
+          top: 0;
+          left: 1em;
+        }
+      }
+    }
+  }
+}

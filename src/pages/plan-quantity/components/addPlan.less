@@ -1,0 +1,44 @@
+.table-warp {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--bg-active);
+  .table-header {
+    width: 100%;
+    height: 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    .item {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.125rem;
+    }
+  }
+  .row-warp {
+    width: 100%;
+    height: 2.75rem;
+    display: flex;
+    justify-content: center;
+    border-top: 1px dashed var(--bg-active);
+    .item {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .ant-input-number {
+        width: 100%;
+        .ant-input-number-input {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.confirm-bottom {
+  margin-top: 1.5rem;
+  text-align: right;
+  .ant-btn {
+    margin-left: 1.5rem;
+  }
+}

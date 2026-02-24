@@ -1,0 +1,29 @@
+.com-imt {
+  display: flex;
+  align-items: center;
+  @icon-list: rain, sun, wind, temperature;
+    each(@icon-list, {
+      .i-@{value}  {
+        background-image: ~"url(@/assets/common-screen/@{value}.png)";
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    });
+  i {
+    width: 3.8em;
+    height: 4.5em;
+  }
+  .com-imt-right {
+    margin-left: 0.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .imt-right-value {
+      font-size: 2em;
+    }
+    .imt-right-name {
+      font-size: 1.4em;
+    }
+  }
+}

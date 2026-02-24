@@ -1,0 +1,25 @@
+.nx-sc-ctbtn {
+  width: 100%;
+  height: 100%;
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+  .ctbtn-item {
+    width: 32%;
+    display: flex;
+    align-items: center;
+    i {
+      height: 8em;
+      width: 8em;
+      margin-right: 1em;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    @icon-list: sc1, sc2, sc3;
+    each(@icon-list, {
+      .i-@{value}  {
+        background-image: ~"url(@/assets/liaoning-screen/@{value}.png)";
+      }
+    })
+  }
+}

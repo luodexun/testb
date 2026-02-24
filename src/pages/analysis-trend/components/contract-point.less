@@ -1,0 +1,27 @@
+.anly-ctt {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  .chart-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .template-name {
+    position: absolute;
+    top: 5em;
+    right: 5em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: var(--bg-active);
+    &.hidden {
+      visibility: hidden;
+    }
+    .btn-list {
+      margin-top: 1em;
+      text-align: right;
+    }
+  }
+}

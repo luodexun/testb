@@ -1,0 +1,31 @@
+@import "@/styles/layout-flex";
+.alarm-history {
+  position: relative;
+  .alarm-history-content {
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    .alarm-history-content-left {
+      .flex-column(1em, flex-start, flex-start);
+      height: 100%;
+      width: 15%;
+      border-right: 1px solid #265B9F;
+      .ant-select {
+        width: 100%;
+      }
+      .power-tree{
+        height: 100% !important;
+        .ant-tree{
+          height: calc(100% - 2.5em) !important;
+        }
+        gap: 0.5em !important;
+      }
+    }
+    .alarm-history-content-right{
+      height: 100%;
+      width: 85%;
+    }
+  }
+}

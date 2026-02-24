@@ -1,0 +1,58 @@
+.sx-screen {
+  width: 1920px;
+  height: 1080px;
+  font-size: 10px;
+  position: relative;
+  background-image: url(/src/assets/shanxi-screen/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  .sx-screen-content {
+    width: 100%;
+    // padding: 3.3em 4.4em;
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    .sx-screen-left, .sx-screen-right {
+      width: 30%;
+      height: 100%;
+      padding-top: 7em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: inset 0px 0px 34px 1px rgba(17,40,255,0.66);
+      border: 2px solid #0D53B7;
+      background: RGBA(3, 6, 70, 0.3);
+      .screen-lr40-box {
+        .screen-box-height(39.5%)
+      }
+      .screen-lr50-box {
+        .screen-box-height(50%)
+      }
+      .screen-lr49-box {
+        .screen-box-height(49.50%)
+      }
+      .screen-lr60-box {
+        .screen-box-height(59.9%)
+      }
+      .screen-box-height(@height) {
+        height: @height;
+        width: 100%;
+      }
+    }
+    .sx-screen-center {
+      flex: 1;
+      height: 100%;
+    }
+    .station-select {
+      width: 14em;
+      z-index: 2;
+      position: absolute;
+      top: 2em;
+      right: .3em;
+    }
+  }
+}
